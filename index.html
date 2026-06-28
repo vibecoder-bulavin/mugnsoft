@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Mugnsoft</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/base.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+  .logos-wrap{
+    animation: marquee 20s linear infinite;
+}
+@keyframes marquee{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+  .faq-item-answer{
+    height:0;
+    overflow:hidden;
+    transition:height .35s ease;
+  }
+  .faq-icon-line{
+      transition:background-color .3s ease;
+  }
+  .faq-icon-line.vertical{
+      transition:transform .3s ease;
+  }
+</style>
+</head>
+<body class="body">
+  <div data-animation="default" data-collapse="tiny" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="container w-container">
+      <div class="navbar-content-wrapper">
+        <a href="#" class="logo-link w-inline-block">
+          <div class="footer-logo-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_i_360_8076)">
+                <path d="M0 24L7.43243 7.01887H15.3153L10.3604 0H27.9279L32.8829 7.01887L35.8108 0H45.045L50 7.01887L42.5676 24H34.4595L41.8919 7.01887H32.8829L25.4505 24H17.3423L24.7748 7.01887H15.3153L7.88288 24H0Z" fill="#DFDFDF"></path>
+              </g>
+              <defs>
+                <filter id="filter0_i_360_8076"
+        x="0"
+        y="0"
+        width="50"
+        height="24"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB">
+
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+    <feColorMatrix in="SourceAlpha"
+                   type="matrix"
+                   values="0 0 0 0 0
+                           0 0 0 0 0
+                           0 0 0 0 0
+                           0 0 0 127 0"
+                   result="hardAlpha"/>
+    <feOffset dx="1" dy="1"/>
+    <feComposite in2="hardAlpha"
+                 operator="arithmetic"
+                 k2="-1"
+                 k3="1"/>
+    <feColorMatrix type="matrix"
+                   values="0 0 0 0 1
+                           0 0 0 0 1
+                           0 0 0 0 1
+                           0 0 0 1 0"/>
+    <feBlend in2="shape" result="effect1_innerShadow_360_8076"/>
+</filter>
+              </defs>
+            </svg>
+          </div>
+          <p class="brand-name">Mugnsoft</p>
+        </a>
+        <nav role="navigation" class="navbar-menu w-nav-menu">
+          <div class="nav-menu-content-wrapper">
+            <div class="open-menu-top">
+              <a href="#" class="logo-link w-inline-block">
+                <div class="footer-logo-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_i_360_8076)">
+                      <path d="M0 24L7.43243 7.01887H15.3153L10.3604 0H27.9279L32.8829 7.01887L35.8108 0H45.045L50 7.01887L42.5676 24H34.4595L41.8919 7.01887H32.8829L25.4505 24H17.3423L24.7748 7.01887H15.3153L7.88288 24H0Z" fill="#DFDFDF"></path>
+                    </g>
+                    <defs>
+                      <filter id="filter0_i_360_8076" x="0" y="0" width="50" height="24" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feflood flood-opacity="0" result="BackgroundImageFix">
+                        <feblend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                        <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                        <feoffset dx="1" dy="1">
+                        <fecomposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                        <fecolormatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0">
+                        <feblend mode="normal" in2="shape" result="effect1_innerShadow_360_8076">
+                      </feblend></fecolormatrix></fecomposite></feoffset></fecolormatrix></feblend></feflood></filter>
+                    </defs>
+                  </svg>
+                </div>
+                <p class="brand-name">Mugnsoft</p>
+              </a>
+              <div class="menu-close-icon-wrap"><img src="images/majesticons_close-line.svg" loading="lazy" alt="" class="close-icon"></div>
+            </div>
+            <div class="nav-links-wrapper">
+              <a href="#" class="navbar-link-item w-nav-link">Notre solution</a>
+              <a href="#" class="navbar-link-item w-nav-link">Fonctionnement</a>
+              <a href="#" class="navbar-link-item w-nav-link">Tarifs</a>
+              <a href="#" class="navbar-link-item w-nav-link">FAQ</a>
+            </div>
+            <a href="#" class="white__btn menu-mob-only w-inline-block">
+              <div class="green__btn-text">Réserver une démo</div>
+            </a>
+          </div>
+        </nav>
+        <div class="menu-button w-nav-button">
+          <div class="menu-button-lines-wrap"><img src="images/iconamoon_menu-burger-horizontal.svg" loading="lazy" alt="" class="menu-icon"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="hero">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="hero-content-wrapper">
+        <div class="hero-top-part-wrap">
+          <div class="hero-top-bullet">
+            <div class="hero-top-bullet__icon w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4.28571L6 6.98571V12C6 14.7 8.625 18.1714 12 19.7143C15.375 18.9429 18 14.7 18 12V6.98571L12 4.28571Z" fill="#D0D6E0"></path>
+              </svg>
+            </div>
+            <p class="hero-top-bullet_p">Sécurisez vos SaaS et applications web</p><img src="images/Shine.svg" loading="lazy" alt="" class="hero-top-bullet_shine"><img src="images/button-hradient-border.svg" loading="lazy" alt="" class="hor-top-bullet_border">
+          </div>
+          <div class="hero-heading-wrap">
+            <h1>Ne laissez plus vos utilisateurs découvrir vos <span class="bug-embed"> </span> bugs avant vous</h1>
+            <p class="hero-p">Surveillez automatiquement les parcours critiques de vos applications web pour détecter les bugs, crashs et lenteurs avant qu’ils n’impactent vos utilisateurs.</p>
+          </div>
+        </div>
+        <div class="hero-btn-part">
+          <div class="hero-double-btn-wrap">
+            <a href="#" class="green__btn w-inline-block">
+              <div class="green__btn-inner hero_btn">
+                <div class="green__btn-text">Réserver une démo</div><img src="images/arrow.svg" loading="lazy" alt="" class="btn-icon">
+              </div>
+            </a>
+            <div class="grey__btn">
+              <div class="grey__btn-text">Découvrir la solution</div><img src="images/button-hradient-border.svg" loading="lazy" alt="" class="grey-btn-border">
+            </div>
+          </div>
+          <div class="star-part">
+            <div class="star-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z" fill="#00FF80"></path>
+              </svg>
+            </div>
+            <div class="rank-point">4.8</div>
+            <div>de satisfaction client</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="with-bg-section">
+      <div class="video-block-inner">
+        <div class="video-content-wrapper">
+          <div class="video-embed w-embed w-script">
+            <script src="https://fast.wistia.com/player.js" async=""></script>
+            <script src="https://fast.wistia.com/embed/22htalunmu.js" async="" type="module"></script>
+            <style>wistia-player[media-id='22htalunmu']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/22htalunmu/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style> <wistia-player media-id="22htalunmu" aspect="0.5625"></wistia-player>
+          </div><img src="images/video-thumb.png" loading="lazy" sizes="(max-width: 2496px) 100vw, 2496px" srcset="images/video-thumb-p-500.png 500w, images/video-thumb-p-800.png 800w, images/video-thumb-p-1080.png 1080w, images/video-thumb-p-1600.png 1600w, images/video-thumb-p-2000.png 2000w, images/video-thumb.png 2496w" alt="" class="video-thumb-image">
+        </div>
+        <div class="bg-green-linear"></div>
+        <div class="video-block-shadow-vlack"></div>
+        <div class="video-block-shadow-green"></div>
+      </div>
+    </section>
+  </section>
+  <section class="logos-section">
+    <div class="logos-anim-rap">
+      <div class="logos-wrap"><img src="images/slide_1.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_2.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_3.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_4.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_5.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_6.png" loading="lazy" alt="" class="logos-image"></div>
+      <div class="logos-wrap"><img src="images/slide_1.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_2.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_3.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_4.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_5.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_6.png" loading="lazy" alt="" class="logos-image"></div>
+      <div class="logos-wrap"><img src="images/slide_1.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_2.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_3.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_4.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_5.png" loading="lazy" alt="" class="logos-image"><img src="images/slide_6.png" loading="lazy" alt="" class="logos-image"></div>
+    </div>
+  </section>
+  <section class="review-first">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="reviews-grid">
+        <div class="white-border">
+          <div class="review-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>‍<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>‍<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="review-author"><img src="images/face-2.png" loading="lazy" alt="" class="review-author_image">
+              <div class="review-author-name">Ronald Richards</div>
+            </div>
+          </div>
+        </div>
+        <div class="white-border">
+          <div class="review-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>‍<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>‍<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="review-author"><img src="images/face-1.png" loading="lazy" alt="" class="review-author_image">
+              <div class="review-author-name">Floyd Miles</div>
+            </div>
+          </div>
+        </div>
+        <div class="white-border">
+          <div class="review-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>‍<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>‍<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="review-author"><img src="images/theresa.png" loading="lazy" alt="" class="review-author_image">
+              <div class="review-author-name">Theresa Webb</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-top-line">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="les-bugs-content-wrapper">
+        <div class="heading-with-description">
+          <h2><span class="op-40">Les bugs de votre application</span> sont souvent détectés trop tard</h2>
+          <div class="les-bugs-p">Lorsque votre application rencontre un problème, ce sont souvent vos utilisateurs qui le découvrent en premier.</div>
+        </div>
+        <div class="les-bugs-content">
+          <div class="les-bugs-item">
+            <h3>Vos utilisateurs découvrent les bugs avant vous</h3>
+            <p class="max-w-380">Un paiement qui échoue, une page qui ne charge plus, vos clients le voient avant votre équipe.</p>
+            <div class="les-bugs-image-wrap"><img src="images/timing.png" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" srcset="images/timing-p-500.png 500w, images/timing-p-800.png 800w, images/timing.png 1024w" alt="" class="les-bugs-image"></div>
+            <p class="max-w-380"><span class="white"><strong>53%</strong></span> des internautes abandonnent si la page met plus de 3 secondes à charger.</p>
+          </div>
+          <div class="divider-line-les-bugs"></div>
+          <div class="les-bugs-item">
+            <h3>Chaque minute de bug invisible vous coûte des clients</h3>
+            <p class="max-w-380">Sans surveillance active, les problèmes restent invisibles jusqu&#x27;aux premiers retours clients.</p>
+            <div class="les-bugs-image-wrap"><img src="images/bugs-2.png" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" srcset="images/bugs-2-p-500.png 500w, images/bugs-2-p-800.png 800w, images/bugs-2.png 1024w" alt="" class="les-bugs-image"></div>
+            <p><span class="white"><strong>46% </strong></span>des acheteurs ayant vécu une mauvaise expérience ne reviennent jamais sur le même site.</p>
+          </div>
+        </div>
+        <div class="bugs-btn-wrapper">
+          <a href="#form-section" class="green__btn w-inline-block">
+            <div class="green__btn-inner">
+              <div class="green__btn-text">Réserver une démo</div><img src="images/arrow.svg" loading="lazy" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="tabs-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="tabs-block-item">
+        <div class="heading-with-description">
+          <h2><span class="op-40">Tout ce dont votre application </span>a besoin pour rester fiable</h2>
+          <div class="tabs-heading-p">Mugnsoft surveille vos parcours utilisateurs en continu et alerte vos équipes avant que vos clients ne subissent le moindre problème.</div>
+        </div>
+        <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="w-tabs">
+          <div class="tabs-menu w-tab-menu">
+            <a data-tab="Tab 1" class="tab-link w-inline-block w-tab-link w--current">
+              <div class="tab-link-text">Surveillance des parcours</div>
+            </a>
+            <a data-tab="Tab 2" class="tab-link w-inline-block w-tab-link">
+              <div class="tab-link-text">Détection des bugs</div>
+            </a>
+            <a data-tab="Tab 3" class="tab-link w-inline-block w-tab-link">
+              <div class="tab-link-text">Déploiement rapide</div>
+            </a>
+            <a data-tab="Tab 4" class="tab-link w-inline-block w-tab-link">
+              <div class="tab-link-text">Alertes instantanées</div>
+            </a>
+          </div>
+          <div class="tabs-content w-tab-content">
+            <div data-tab="Tab 1" class="tab-content-wrapper w-tab-pane w--tab-active">
+              <div class="tab-content-inner">
+                <div class="tab-item-content">
+                  <h3 class="tabs-heading">Simulez les actions de vos utilisateurs en continu.</h3>
+                  <p>Mugnsoft reproduit automatiquement les parcours critiques de votre application, connexion, recherche, paiement, formulaire, et vérifie qu&#x27;ils fonctionnent correctement, 24h/24</p>
+                  <div class="tab-bullets-wrapper">
+                    <div class="tab-bullet-item"><img src="images/tab-icon.svg" loading="lazy" width="70" alt="" class="tab-item-icon">
+                      <p>Parcours configurables sans modifier votre code</p>
+                    </div>
+                    <div class="tab-bullet-item"><img src="images/tab-icon.svg" loading="lazy" width="70" alt="" class="tab-item-icon">
+                      <p>Simulation depuis plusieurs localisations géographiques</p>
+                    </div>
+                    <div class="tab-bullet-item"><img src="images/tab-icon.svg" loading="lazy" width="70" alt="" class="tab-item-icon">
+                      <p>Détection immédiate dès qu&#x27;un parcours échoue</p>
+                    </div>
+                  </div>
+                  <a href="#form-section" class="green__btn tabs w-inline-block">
+                    <div class="green__btn-inner">
+                      <div class="green__btn-text">Réserver une démo</div><img src="images/arrow.svg" loading="lazy" alt="">
+                    </div>
+                  </a>
+                </div><img src="images/tab_1.png" loading="lazy" sizes="100vw" srcset="images/tab_1-p-500.png 500w, images/tab_1-p-800.png 800w, images/tab_1-p-1080.png 1080w, images/tab_1.png 1144w" alt="" class="tab-image">
+              </div>
+            </div>
+            <div data-tab="Tab 2" class="tab-content-wrapper w-tab-pane">
+              <div class="tab-content-inner">
+                <div class="tab-item-content">
+                  <h3 class="tabs-heading">Repérez les bugs avant que vos utilisateurs ne les trouvent.</h3>
+                  <p>Dès qu&#x27;une anomalie est détectée, Mugnsoft l&#x27;identifie, la capture et vous indique exactement où et pourquoi ça a cassé.</p>
+                  <div class="tab-bullets-wrapper">
+                    <div class="tab-bullet-item"><img src="images/tab-icon.svg" loading="lazy" width="70" alt="" class="tab-item-icon">
+                      <p>Capture automatique de screenshots à chaque erreur</p>
+                    </div>
+                    <div class="tab-bullet-item"><img src="images/tab-icon.svg" loading="lazy" width="70" alt="" class="tab-item-icon">
+                      <p>Identification précise de l&#x27;origine du problème</p>
+                    </div>
+                    <div class="tab-bullet-item"><img src="images/tab-icon.svg" loading="lazy" width="70" alt="" class="tab-item-icon">
+                      <p>Historique complet des incidents pour faciliter le diagnostic</p>
+                    </div>
+                  </div>
+                  <a href="#form-section" class="green__btn tabs w-inline-block">
+                    <div class="green__btn-inner">
+                      <div class="green__btn-text">Réserver une démo</div><img src="images/arrow.svg" loading="lazy" alt="">
+                    </div>
+                  </a>
+                </div><img src="images/tab-2.png" loading="lazy" sizes="100vw" srcset="images/tab-2-p-500.png 500w, images/tab-2-p-800.png 800w, images/tab-2-p-1080.png 1080w, images/tab-2.png 1144w" alt="" class="tab-image">
+              </div>
+            </div>
+            <div data-tab="Tab 3" class="tab-content-wrapper w-tab-pane">
+              <div class="tab-content-inner">
+                <div class="tab-item-content">
+                  <h3 class="tabs-heading">Soyez le premier à savoir. Pas le dernier.</h3>
+                  <p>Mugnsoft alerte vos équipes en temps réel dès qu&#x27;un bug ou une panne est détecté, directement dans les outils que vous utilisez déjà.</p>
+                  <div class="tab-bullets-wrapper">
+                    <div class="tab-bullet-item"><img src="images/tab-icon.svg" loading="lazy" width="70" alt="" class="tab-item-icon">
+                      <p>Alertes par email, Slack ou Microsoft Teams</p>
+                    </div>
+                    <div class="tab-bullet-item"><img src="images/tab-icon.svg" loading="lazy" width="70" alt="" class="tab-item-icon">
+                      <p>Notifications configurables selon la criticité</p>
+                    </div>
+                    <div class="tab-bullet-item"><img src="images/tab-icon.svg" loading="lazy" width="70" alt="" class="tab-item-icon">
+                      <p>Zéro délai entre la détection et l&#x27;alerte</p>
+                    </div>
+                  </div>
+                  <a href="#form-section" class="green__btn tabs w-inline-block">
+                    <div class="green__btn-inner">
+                      <div class="green__btn-text">Réserver une démo</div><img src="images/arrow.svg" loading="lazy" alt="">
+                    </div>
+                  </a>
+                </div><img src="images/tab-3.png" loading="lazy" sizes="100vw" srcset="images/tab-3-p-500.png 500w, images/tab-3-p-800.png 800w, images/tab-3-p-1080.png 1080w, images/tab-3.png 1144w" alt="" class="tab-image">
+              </div>
+            </div>
+            <div data-tab="Tab 4" class="tab-content-wrapper w-tab-pane">
+              <div class="tab-content-inner">
+                <div class="tab-item-content">
+                  <h3 class="tabs-heading">Opérationnel en moins de 10 minutes. Sans toucher à votre code.</h3>
+                  <p>Pas d&#x27;agent complexe à installer. Pas de modification de votre application. Mugnsoft se déploie en quelques minutes et surveille immédiatement vos parcours critiques.</p>
+                  <div class="tab-bullets-wrapper">
+                    <div class="tab-bullet-item"><img src="images/tab-icon.svg" loading="lazy" width="70" alt="" class="tab-item-icon">
+                      <p>Déploiement SaaS ou Docker selon vos besoins</p>
+                    </div>
+                    <div class="tab-bullet-item"><img src="images/tab-icon.svg" loading="lazy" width="70" alt="" class="tab-item-icon">
+                      <p>Aucune dépendance technique requise</p>
+                    </div>
+                    <div class="tab-bullet-item"><img src="images/tab-icon.svg" loading="lazy" width="70" alt="" class="tab-item-icon">
+                      <p>Compatible avec toutes les stacks web</p>
+                    </div>
+                  </div>
+                  <a href="#form-section" class="green__btn tabs w-inline-block">
+                    <div class="green__btn-inner">
+                      <div class="green__btn-text">Réserver une démo</div><img src="images/arrow.svg" loading="lazy" alt="">
+                    </div>
+                  </a>
+                </div><img src="images/tab-4.png" loading="lazy" sizes="100vw" srcset="images/tab-4-p-500.png 500w, images/tab-4-p-800.png 800w, images/tab-4-p-1080.png 1080w, images/tab-4.png 1144w" alt="" class="tab-image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-top-line">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="les-bugs-content-wrapper">
+        <div class="heading-with-description">
+          <h2>Détectez. Alertez. Protégez</h2>
+          <div class="detctez-p">Détectez rapidement les problèmes de votre application et intervenez avant qu&#x27;ils n&#x27;impactent l&#x27;expérience de vos utilisateur</div>
+        </div>
+        <div class="detectez-grid">
+          <div class="white-border detectez">
+            <div class="detectez-item"><img src="images/detectez-1.png" loading="lazy" sizes="100vw" srcset="images/detectez-1-p-500.png 500w, images/detectez-1.png 640w" alt="" class="detectez-image">
+              <div class="detectez-item-text-wrap">
+                <p class="detectez-item-heading">Zéro surprise pour vos utilisateurs</p>
+                <div>Vos clients ne découvrent plus jamais un bug avant vous.</div>
+              </div>
+            </div>
+          </div>
+          <div class="white-border detectez">
+            <div class="detectez-item"><img src="images/detectez-2.png" loading="lazy" sizes="100vw" srcset="images/detectez-2-p-500.png 500w, images/detectez-2.png 640w" alt="" class="detectez-image">
+              <div class="detectez-item-text-wrap">
+                <p class="detectez-item-heading">Moins de temps perdu à diagnostiquer</p>
+                <div>Mugnsoft vous dit quoi, où et quand. Vos équipes interviennent directement au bon endroit.</div>
+              </div>
+            </div>
+          </div>
+          <div class="white-border detectez">
+            <div class="detectez-item"><img src="images/detectez-3.png" loading="lazy" sizes="100vw" srcset="images/detectez-3-p-500.png 500w, images/detectez-3.png 640w" alt="" class="detectez-image">
+              <div class="detectez-item-text-wrap">
+                <p class="detectez-item-heading">Une application fiable, 24h/24</p>
+                <div>Mugnsoft surveille vos parcours critiques en continu, même quand votre équipe ne travaille pas.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bugs-btn-wrapper no-margin">
+          <a href="#form-section" class="green__btn w-inline-block">
+            <div class="green__btn-inner">
+              <div class="green__btn-text">Réserver une démo</div><img src="images/arrow.svg" loading="lazy" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="with-bg-section demarez">
+    <div class="demarrez-inner">
+      <div class="demarez-content">
+        <div class="heading-with-description wider">
+          <h2>Démarrez en 3 étapes simples.</h2>
+          <div class="demarez-p">Pas besoin de mobiliser votre équipe technique. Pas besoin de toucher à votre code. Troisétapes suffisent</div>
+        </div>
+        <div class="demarez-main-content">
+          <div class="demarez-dots">
+            <div class="demarez-dot-wrap">
+              <div class="demrez-dot-ico"></div>
+            </div>
+            <div class="demarez-dots-line"></div>
+            <div class="demarez-dot-wrap grey">
+              <div class="demrez-dot-ico grey"></div>
+            </div>
+            <div class="demarez-dots-line"></div>
+            <div class="demarez-dot-wrap grey">
+              <div class="demrez-dot-ico grey"></div>
+            </div>
+          </div>
+          <div class="demarez-bullets-grid">
+            <div class="demarez-bullet-item">
+              <div class="demarez-image-wrap"><img src="images/demarez-1.png" loading="lazy" sizes="100vw" srcset="images/demarez-1-p-500.png 500w, images/demarez-1.png 768w" alt=""></div>
+              <div class="demarez-bullet-text-wrap">
+                <p class="demarez-item-heading">Réservez votre démo</p>
+                <div>Choisissez un créneau en 2 minutes. On répond à toutes vos questions, sans engagement.</div>
+              </div>
+            </div>
+            <div class="demarez-bullet-item">
+              <div class="demarez-image-wrap"><img src="images/demarez-2.png" loading="lazy" sizes="100vw" srcset="images/demarez-2-p-500.png 500w, images/demarez-2.png 768w" alt=""></div>
+              <div class="demarez-bullet-text-wrap">
+                <p class="demarez-item-heading">On configure tout ensemble</p>
+                <div>Vos parcours critiques sont paramétrés par notre équipe. Opérationnel en moins de 10 minutes.</div>
+              </div>
+            </div>
+            <div class="demarez-bullet-item">
+              <div class="demarez-image-wrap"><img src="images/demarez-3.png" loading="lazy" sizes="100vw" srcset="images/demarez-3-p-500.png 500w, images/demarez-3.png 768w" alt="" class="demarez-image"></div>
+              <div class="demarez-bullet-text-wrap">
+                <p class="demarez-item-heading">Détectez vos bugs avant vos utilisateurs</p>
+                <div>Votre application est surveillée en continu. Vos équipes sont alertées dès qu&#x27;un problème apparaît.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bugs-btn-wrapper no-margin">
+          <a href="#form-section" class="green__btn w-inline-block">
+            <div class="green__btn-inner">
+              <div class="green__btn-text">Réserver une démo</div><img src="images/arrow.svg" loading="lazy" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="bg-green-linear radial"></div>
+    </div>
+  </section>
+  <section class="plans">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="plans-content-wrapper">
+        <div class="heading-with-description">
+          <h2><span class="op-40">Un plan pour chaque étape</span> de votre croissance.</h2>
+          <div class="demarez-p">Choisissez le plan adapté à vos besoins. On en parle ensemble.</div>
+        </div>
+        <div class="plans-items-wrapper">
+          <div class="plan-item">
+            <div class="plan-top-part">
+              <div class="plan-name">PULSE</div>
+              <div class="plan-price">
+                <h2>$25</h2>
+                <p>/mois</p>
+              </div>
+              <p class="text-18">Surveillez vos parcours critiques en toute autonomie.</p>
+              <div class="grey__btn">
+                <div class="grey__btn-text">Réserver une démo</div><img src="images/button-hradient-border.svg" loading="lazy" alt="" class="grey-btn-border">
+              </div>
+            </div>
+            <div class="plan-bullets">
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Jusqu&#x27;à 20 parcours utilisateurs surveillés</div>
+              </div>
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Vérifications automatiques 24/7</div>
+              </div>
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Alertes instantanées : Email, SMS, Slack, Webhook</div>
+              </div>
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Installation locale, aucun hébergement requis</div>
+              </div>
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Déploiement en moins de 10 minutes</div>
+              </div>
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Support technique inclus</div>
+              </div>
+            </div>
+          </div>
+          <div class="divider-line-plans"></div>
+          <div class="plan-item">
+            <div class="plan-top-part">
+              <div class="plan-name-wrap">
+                <div class="plan-name">CORE</div><img src="images/poplar.svg" loading="lazy" alt="" class="popular">
+              </div>
+              <div class="plan-price">
+                <h2>Sur mesure</h2>
+              </div>
+              <p class="text-18">La surveillance complète, configurée et gérée pour vous.</p>
+              <a href="#form-section" class="green__btn w-inline-block">
+                <div class="green__btn-inner">
+                  <div class="green__btn-text">Réserver une démo</div><img src="images/arrow.svg" loading="lazy" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="plan-bullets">
+              <div class="all-in-pulse">
+                <div class="all-in-pulse-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M5 12H19" stroke="#F7F8F8" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Tout ce qui est inclus dans Pulse</div>
+              </div>
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Parcours utilisateurs illimités</div>
+              </div>
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Hébergement SaaS géré à 100% par Mugnsoft</div>
+              </div>
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Rapports d&#x27;incidents illimités</div>
+              </div>
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Intégrations avancées : Gitlab, outils tiers</div>
+              </div>
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Support premium &amp; accompagnement dédié</div>
+              </div>
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Configuration assistée par notre équipe</div>
+              </div>
+              <div class="plan-bullet_item">
+                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div>Monitoring continu, même quand votre équipe dort</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-top-line reviews">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="reviews-content-wrapper">
+        <div class="reviews-text-part">
+          <div class="heading-with-description">
+            <h2><span class="op-40">Ce que nos clients </span>disent de Mugnsoft</h2>
+            <div class="reviews-p">Ils ont arrêté d&#x27;apprendre leurs pannes par leurs clients.</div>
+          </div>
+          <div class="star-part">
+            <div class="star-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z" fill="#00FF80"></path>
+              </svg>
+            </div>
+            <div class="rank-point">4.8</div>
+            <div>de satisfaction client</div>
+          </div>
+        </div>
+        <div class="reviews-items-wrap">
+          <div class="reviews-collumn first">
+            <div class="white-border">
+              <div class="review-item">
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <div class="review-author"><img src="images/theresa.png" loading="lazy" alt="" class="review-author_image">
+                  <div class="review-author-name">Floyd Miles</div>
+                </div>
+              </div>
+            </div>
+            <div class="white-border">
+              <div class="review-item">
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <div class="review-author"><img src="images/theresa.png" loading="lazy" alt="" class="review-author_image">
+                  <div class="review-author-name">Floyd Miles</div>
+                </div>
+              </div>
+            </div>
+            <div class="white-border">
+              <div class="review-item">
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <div class="review-author"><img src="images/theresa.png" loading="lazy" alt="" class="review-author_image">
+                  <div class="review-author-name">Floyd Miles</div>
+                </div>
+              </div>
+            </div>
+            <div class="white-border">
+              <div class="review-item">
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <div class="review-author"><img src="images/theresa.png" loading="lazy" alt="" class="review-author_image">
+                  <div class="review-author-name">Floyd Miles</div>
+                </div>
+              </div>
+            </div>
+            <div class="white-border">
+              <div class="review-item">
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <div class="review-author"><img src="images/theresa.png" loading="lazy" alt="" class="review-author_image">
+                  <div class="review-author-name">Floyd Miles</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-collumn">
+            <div class="white-border">
+              <div class="review-item">
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <div class="review-author"><img src="images/theresa.png" loading="lazy" alt="" class="review-author_image">
+                  <div class="review-author-name">Floyd Miles</div>
+                </div>
+              </div>
+            </div>
+            <div class="white-border">
+              <div class="review-item">
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <div class="review-author"><img src="images/theresa.png" loading="lazy" alt="" class="review-author_image">
+                  <div class="review-author-name">Floyd Miles</div>
+                </div>
+              </div>
+            </div>
+            <div class="white-border">
+              <div class="review-item">
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <div class="review-author"><img src="images/theresa.png" loading="lazy" alt="" class="review-author_image">
+                  <div class="review-author-name">Floyd Miles</div>
+                </div>
+              </div>
+            </div>
+            <div class="white-border">
+              <div class="review-item">
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <div class="review-author"><img src="images/theresa.png" loading="lazy" alt="" class="review-author_image">
+                  <div class="review-author-name">Floyd Miles</div>
+                </div>
+              </div>
+            </div>
+            <div class="white-border">
+              <div class="review-item">
+                <p>Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <div class="review-author"><img src="images/theresa.png" loading="lazy" alt="" class="review-author_image">
+                  <div class="review-author-name">Floyd Miles</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-shadower"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="integrations">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="integrations-content-wrapper">
+        <div class="heading-with-description integ">
+          <h2><span class="op-40">Mugnsoft s&#x27;intègre aux</span> outils que vous utilisez déjà.</h2>
+          <div>Pas de changement dans votre stack. Connectez Mugnsoft en quelques clics et recevez vos alertes là où votre équipe travaille.</div>
+        </div>
+        <a href="#form-section" class="green__btn w-inline-block">
+          <div class="green__btn-inner">
+            <div class="green__btn-text">Réserver une démo</div><img src="images/arrow.svg" loading="lazy" alt="">
+          </div>
+        </a><img src="images/icons.svg" loading="lazy" alt="" class="icons-integrations">
+      </div>
+    </div>
+  </section>
+  <section id="form-section" class="with-bg-section form-sec">
+    <div class="demarrez-inner">
+      <div class="demarez-content">
+        <div class="heading-with-description centered">
+          <h2>Réservez une démo avec Mugnsoft</h2>
+          <div class="reserve-demo-p">Choisissez un créneau. On vous présente la solution, on répond à vos questions, et on configure ensemble vos premiers parcours critiques.</div>
+        </div>
+        <div class="iclosed-widget w-embed w-script"><!--  iClosed inline widget begin  -->
+          <div class="iclosed-widget" data-url="https://app.iclosed.io/e/Clicknland/audit" title="Audit gratuit en 1:1 avec Lucas" style="width: 100%; height: 100%"></div>
+          <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js" async=""></script>
+          <!--  iClosed inline widget end  -->
+        </div>
+      </div>
+      <div class="bg-green-linear radial"></div>
+    </div>
+  </section>
+  <section class="faq">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="faq-content-wrapper">
+        <div class="faq-text-wrap">
+          <div class="heading-with-description">
+            <h2><span class="op-40">Les questions qu&#x27;on nou </span>spose le plus souvent</h2>
+            <div class="faq-p">Vous ne trouvez pas la réponse à vos questions? Contactez-nous ou réserver une démo.</div>
+            <div class="grey__btn faq-btn">
+              <div class="grey__btn-text">Réserver une démo</div><img src="images/button-hradient-border.svg" loading="lazy" alt="" class="grey-btn-border">
+            </div>
+          </div>
+        </div>
+        <div class="faq-questions-wrapper">
+          <div class="faq-item">
+            <div class="faq-item-top">
+              <p class="p-20">Combien de temps prend la mise en place ?</p>
+              <div class="faq-icon-wrapper">
+                <div class="faq-icon-line vertical"></div>
+                <div class="faq-icon-line horizontal"></div>
+              </div>
+            </div>
+            <div class="faq-item-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-top">
+              <p class="p-20">Est-ce que je dois modifier mon code pour utiliser Mugnsoft ?</p>
+              <div class="faq-icon-wrapper">
+                <div class="faq-icon-line vertical"></div>
+                <div class="faq-icon-line horizontal"></div>
+              </div>
+            </div>
+            <div class="faq-item-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-top">
+              <p class="p-20">Quelle est la différence avec Datadog ou Zabbix ?</p>
+              <div class="faq-icon-wrapper">
+                <div class="faq-icon-line vertical"></div>
+                <div class="faq-icon-line horizontal"></div>
+              </div>
+            </div>
+            <div class="faq-item-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-top">
+              <p class="p-20">Est-ce compatible avec ma stack technique ?</p>
+              <div class="faq-icon-wrapper">
+                <div class="faq-icon-line vertical"></div>
+                <div class="faq-icon-line horizontal"></div>
+              </div>
+            </div>
+            <div class="faq-item-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-top">
+              <p class="p-20">Où sont hébergées mes données ?</p>
+              <div class="faq-icon-wrapper">
+                <div class="faq-icon-line vertical"></div>
+                <div class="faq-icon-line horizontal"></div>
+              </div>
+            </div>
+            <div class="faq-item-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-item-top">
+              <p class="p-20">Est-ce que je peux tester avant de m&#x27;engager ?</p>
+              <div class="faq-icon-wrapper">
+                <div class="faq-icon-line vertical"></div>
+                <div class="faq-icon-line horizontal"></div>
+              </div>
+            </div>
+            <div class="faq-item-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-section">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="white-border cta">
+        <div class="cta-content-wrapper">
+          <div class="heading-with-description centered">
+            <h2>Chaque minute sans monitoring, c&#x27;est un bug que vos utilisateurs découvrent avant vous</h2>
+            <div class="cta-p">Pas de changement dans votre stack. Connectez Mugnsoft en quelques clics et recevez vos alertes là où votre équipe travaille.</div>
+          </div><img src="images/logo-cta.svg" loading="lazy" alt="" class="logo-cta">
+          <div class="footer-double-btn-wrap">
+            <a href="#form-section" class="green__btn w-inline-block">
+              <div class="green__btn-inner">
+                <div class="green__btn-text">Réserver une démo</div><img src="images/arrow.svg" loading="lazy" alt="" class="btn-icon">
+              </div>
+            </a>
+            <div class="grey__btn">
+              <div class="grey__btn-text">Sécuriser mon application</div><img src="images/button-hradient-border.svg" loading="lazy" alt="" class="grey-btn-border">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="w-layout-blockcontainer container w-container">
+      <div class="footer-content-wrapper">
+        <div class="footer-top-part">
+          <a href="#" class="logo-link w-inline-block">
+            <div class="footer-logo-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_i_360_8076)">
+                  <path d="M0 24L7.43243 7.01887H15.3153L10.3604 0H27.9279L32.8829 7.01887L35.8108 0H45.045L50 7.01887L42.5676 24H34.4595L41.8919 7.01887H32.8829L25.4505 24H17.3423L24.7748 7.01887H15.3153L7.88288 24H0Z" fill="#DFDFDF"></path>
+                </g>
+                <defs>
+                  <filter id="filter0_i_360_8076" x="0" y="0" width="50" height="24" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feflood flood-opacity="0" result="BackgroundImageFix">
+                    <feblend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+                    <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha">
+                    <feoffset dx="1" dy="1">
+                    <fecomposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1">
+                    <fecolormatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0">
+                    <feblend mode="normal" in2="shape" result="effect1_innerShadow_360_8076">
+                  </feblend></fecolormatrix></fecomposite></feoffset></fecolormatrix></feblend></feflood></filter>
+                </defs>
+              </svg>
+            </div>
+            <p class="brand-name">Mugnsoft</p>
+          </a>
+          <a href="#" class="white__btn w-inline-block">
+            <div class="green__btn-text">Réserver une démo</div>
+          </a>
+        </div>
+        <div class="footer-main-content">
+          <div class="footer-main-links">
+            <a href="#" class="footer-linkdin-link w-inline-block">
+              <div class="linkdin-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="path-1-inside-1_360_9655" fill="white">
+                    <path d="M23.6146 2H8.38544C6.69191 2 5.06775 2.67275 3.87025 3.87025C2.67275 5.06775 2 6.69191 2 8.38544V23.6146C2 25.3081 2.67275 26.9322 3.87025 28.1297C5.06775 29.3273 6.69191 30 8.38544 30H23.6146C25.3081 30 26.9322 29.3273 28.1297 28.1297C29.3273 26.9322 30 25.3081 30 23.6146V8.38544C30 6.69191 29.3273 5.06775 28.1297 3.87025C26.9322 2.67275 25.3081 2 23.6146 2ZM11.4669 24.6039C11.4714 24.6821 11.4598 24.7603 11.433 24.8339C11.4062 24.9074 11.3646 24.9747 11.3108 25.0316C11.257 25.0884 11.1921 25.1337 11.1202 25.1646C11.0483 25.1955 10.9708 25.2114 10.8925 25.2113H8.33662C8.18248 25.2075 8.03597 25.1434 7.92857 25.0328C7.82118 24.9222 7.76146 24.7739 7.76226 24.6197V13.9897C7.76015 13.913 7.77344 13.8366 7.80136 13.7651C7.82928 13.6936 7.87125 13.6284 7.92479 13.5734C7.97834 13.5183 8.04237 13.4746 8.11311 13.4448C8.18384 13.4149 8.25984 13.3996 8.33662 13.3996H10.8925C10.9693 13.3996 11.0453 13.4149 11.116 13.4448C11.1868 13.4746 11.2508 13.5183 11.3043 13.5734C11.3579 13.6284 11.3999 13.6936 11.4278 13.7651C11.4557 13.8366 11.469 13.913 11.4669 13.9897V24.6039ZM9.56718 11.1639C9.29046 11.1618 9.01686 11.1053 8.762 10.9975C8.50714 10.8896 8.27601 10.7327 8.08181 10.5356C7.8876 10.3384 7.73413 10.105 7.63015 9.84851C7.52617 9.59206 7.47372 9.31764 7.47579 9.04092C7.47787 8.7642 7.53443 8.4906 7.64224 8.23574C7.75005 7.98088 7.90701 7.74975 8.10414 7.55555C8.30128 7.36135 8.53474 7.20787 8.79118 7.10389C9.04763 6.99991 9.32205 6.94746 9.59877 6.94954C10.148 6.9674 10.6686 7.1992 11.0493 7.59549C11.43 7.99177 11.6408 8.52116 11.6367 9.07069C11.6326 9.62022 11.4139 10.1464 11.0272 10.5369C10.6406 10.9274 10.1166 11.1514 9.56718 11.161M25.0993 24.5867C25.0986 24.7318 25.0416 24.8709 24.9404 24.9748C24.8392 25.0788 24.7015 25.1393 24.5565 25.1438H21.8585C21.7132 25.1393 21.5754 25.0786 21.4741 24.9743C21.3728 24.8701 21.316 24.7306 21.3157 24.5852V19.6687C21.3157 18.935 21.5397 16.4767 19.3686 16.4767C17.6757 16.4767 17.3411 18.1998 17.2765 18.9666V24.6972C17.2766 24.8428 17.22 24.9827 17.1186 25.0872C17.0173 25.1918 16.8793 25.2528 16.7337 25.2572H14.1161C13.9678 25.2569 13.8258 25.1977 13.7211 25.0927C13.6163 24.9877 13.5575 24.8455 13.5575 24.6972V13.9381C13.562 13.7925 13.623 13.6545 13.7275 13.5532C13.8321 13.4518 13.972 13.3952 14.1175 13.3953H16.7337C16.8793 13.3952 17.0192 13.4518 17.1238 13.5532C17.2283 13.6545 17.2893 13.7925 17.2937 13.9381V14.8642C17.6757 14.3051 18.2031 13.8609 18.819 13.5795C19.435 13.2981 20.116 13.1902 20.7887 13.2675C25.1467 13.2675 25.1309 17.3383 25.1309 19.6529L25.0993 24.5867Z"></path>
+                  </mask>
+                  <path d="M23.6146 2H8.38544C6.69191 2 5.06775 2.67275 3.87025 3.87025C2.67275 5.06775 2 6.69191 2 8.38544V23.6146C2 25.3081 2.67275 26.9322 3.87025 28.1297C5.06775 29.3273 6.69191 30 8.38544 30H23.6146C25.3081 30 26.9322 29.3273 28.1297 28.1297C29.3273 26.9322 30 25.3081 30 23.6146V8.38544C30 6.69191 29.3273 5.06775 28.1297 3.87025C26.9322 2.67275 25.3081 2 23.6146 2ZM11.4669 24.6039C11.4714 24.6821 11.4598 24.7603 11.433 24.8339C11.4062 24.9074 11.3646 24.9747 11.3108 25.0316C11.257 25.0884 11.1921 25.1337 11.1202 25.1646C11.0483 25.1955 10.9708 25.2114 10.8925 25.2113H8.33662C8.18248 25.2075 8.03597 25.1434 7.92857 25.0328C7.82118 24.9222 7.76146 24.7739 7.76226 24.6197V13.9897C7.76015 13.913 7.77344 13.8366 7.80136 13.7651C7.82928 13.6936 7.87125 13.6284 7.92479 13.5734C7.97834 13.5183 8.04237 13.4746 8.11311 13.4448C8.18384 13.4149 8.25984 13.3996 8.33662 13.3996H10.8925C10.9693 13.3996 11.0453 13.4149 11.116 13.4448C11.1868 13.4746 11.2508 13.5183 11.3043 13.5734C11.3579 13.6284 11.3999 13.6936 11.4278 13.7651C11.4557 13.8366 11.469 13.913 11.4669 13.9897V24.6039ZM9.56718 11.1639C9.29046 11.1618 9.01686 11.1053 8.762 10.9975C8.50714 10.8896 8.27601 10.7327 8.08181 10.5356C7.8876 10.3384 7.73413 10.105 7.63015 9.84851C7.52617 9.59206 7.47372 9.31764 7.47579 9.04092C7.47787 8.7642 7.53443 8.4906 7.64224 8.23574C7.75005 7.98088 7.90701 7.74975 8.10414 7.55555C8.30128 7.36135 8.53474 7.20787 8.79118 7.10389C9.04763 6.99991 9.32205 6.94746 9.59877 6.94954C10.148 6.9674 10.6686 7.1992 11.0493 7.59549C11.43 7.99177 11.6408 8.52116 11.6367 9.07069C11.6326 9.62022 11.4139 10.1464 11.0272 10.5369C10.6406 10.9274 10.1166 11.1514 9.56718 11.161M25.0993 24.5867C25.0986 24.7318 25.0416 24.8709 24.9404 24.9748C24.8392 25.0788 24.7015 25.1393 24.5565 25.1438H21.8585C21.7132 25.1393 21.5754 25.0786 21.4741 24.9743C21.3728 24.8701 21.316 24.7306 21.3157 24.5852V19.6687C21.3157 18.935 21.5397 16.4767 19.3686 16.4767C17.6757 16.4767 17.3411 18.1998 17.2765 18.9666V24.6972C17.2766 24.8428 17.22 24.9827 17.1186 25.0872C17.0173 25.1918 16.8793 25.2528 16.7337 25.2572H14.1161C13.9678 25.2569 13.8258 25.1977 13.7211 25.0927C13.6163 24.9877 13.5575 24.8455 13.5575 24.6972V13.9381C13.562 13.7925 13.623 13.6545 13.7275 13.5532C13.8321 13.4518 13.972 13.3952 14.1175 13.3953H16.7337C16.8793 13.3952 17.0192 13.4518 17.1238 13.5532C17.2283 13.6545 17.2893 13.7925 17.2937 13.9381V14.8642C17.6757 14.3051 18.2031 13.8609 18.819 13.5795C19.435 13.2981 20.116 13.1902 20.7887 13.2675C25.1467 13.2675 25.1309 17.3383 25.1309 19.6529L25.0993 24.5867Z" fill="#F7F8F8" fill-opacity="0.07"></path>
+                  <path d="M23.6146 2H8.38544C6.69191 2 5.06775 2.67275 3.87025 3.87025C2.67275 5.06775 2 6.69191 2 8.38544V23.6146C2 25.3081 2.67275 26.9322 3.87025 28.1297C5.06775 29.3273 6.69191 30 8.38544 30H23.6146C25.3081 30 26.9322 29.3273 28.1297 28.1297C29.3273 26.9322 30 25.3081 30 23.6146V8.38544C30 6.69191 29.3273 5.06775 28.1297 3.87025C26.9322 2.67275 25.3081 2 23.6146 2ZM11.4669 24.6039C11.4714 24.6821 11.4598 24.7603 11.433 24.8339C11.4062 24.9074 11.3646 24.9747 11.3108 25.0316C11.257 25.0884 11.1921 25.1337 11.1202 25.1646C11.0483 25.1955 10.9708 25.2114 10.8925 25.2113H8.33662C8.18248 25.2075 8.03597 25.1434 7.92857 25.0328C7.82118 24.9222 7.76146 24.7739 7.76226 24.6197V13.9897C7.76015 13.913 7.77344 13.8366 7.80136 13.7651C7.82928 13.6936 7.87125 13.6284 7.92479 13.5734C7.97834 13.5183 8.04237 13.4746 8.11311 13.4448C8.18384 13.4149 8.25984 13.3996 8.33662 13.3996H10.8925C10.9693 13.3996 11.0453 13.4149 11.116 13.4448C11.1868 13.4746 11.2508 13.5183 11.3043 13.5734C11.3579 13.6284 11.3999 13.6936 11.4278 13.7651C11.4557 13.8366 11.469 13.913 11.4669 13.9897V24.6039ZM9.56718 11.1639C9.29046 11.1618 9.01686 11.1053 8.762 10.9975C8.50714 10.8896 8.27601 10.7327 8.08181 10.5356C7.8876 10.3384 7.73413 10.105 7.63015 9.84851C7.52617 9.59206 7.47372 9.31764 7.47579 9.04092C7.47787 8.7642 7.53443 8.4906 7.64224 8.23574C7.75005 7.98088 7.90701 7.74975 8.10414 7.55555C8.30128 7.36135 8.53474 7.20787 8.79118 7.10389C9.04763 6.99991 9.32205 6.94746 9.59877 6.94954C10.148 6.9674 10.6686 7.1992 11.0493 7.59549C11.43 7.99177 11.6408 8.52116 11.6367 9.07069C11.6326 9.62022 11.4139 10.1464 11.0272 10.5369C10.6406 10.9274 10.1166 11.1514 9.56718 11.161M25.0993 24.5867C25.0986 24.7318 25.0416 24.8709 24.9404 24.9748C24.8392 25.0788 24.7015 25.1393 24.5565 25.1438H21.8585C21.7132 25.1393 21.5754 25.0786 21.4741 24.9743C21.3728 24.8701 21.316 24.7306 21.3157 24.5852V19.6687C21.3157 18.935 21.5397 16.4767 19.3686 16.4767C17.6757 16.4767 17.3411 18.1998 17.2765 18.9666V24.6972C17.2766 24.8428 17.22 24.9827 17.1186 25.0872C17.0173 25.1918 16.8793 25.2528 16.7337 25.2572H14.1161C13.9678 25.2569 13.8258 25.1977 13.7211 25.0927C13.6163 24.9877 13.5575 24.8455 13.5575 24.6972V13.9381C13.562 13.7925 13.623 13.6545 13.7275 13.5532C13.8321 13.4518 13.972 13.3952 14.1175 13.3953H16.7337C16.8793 13.3952 17.0192 13.4518 17.1238 13.5532C17.2283 13.6545 17.2893 13.7925 17.2937 13.9381V14.8642C17.6757 14.3051 18.2031 13.8609 18.819 13.5795C19.435 13.2981 20.116 13.1902 20.7887 13.2675C25.1467 13.2675 25.1309 17.3383 25.1309 19.6529L25.0993 24.5867Z" fill="url(#paint0_radial_360_9655)" fill-opacity="0.24"></path>
+                  <path d="M8.38544 2V1.5V2ZM2 8.38544H1.5H2ZM2 23.6146H1.5H2ZM11.4669 24.6039H10.9669V24.6183L10.9677 24.6327L11.4669 24.6039ZM10.8925 25.2113L10.8933 24.7113H10.8925V25.2113ZM8.33662 25.2113L8.32442 25.7113H8.33662V25.2113ZM7.76226 24.6197L8.26226 24.6223V24.6197H7.76226ZM7.76226 13.9897H8.26245L8.26207 13.976L7.76226 13.9897ZM8.33662 13.3996L8.33643 13.8996H8.33662V13.3996ZM10.8925 13.3996V13.8996H10.8927L10.8925 13.3996ZM11.4669 13.9897L10.9669 13.976V13.9897H11.4669ZM9.59877 6.94954L9.61503 6.44965L9.60252 6.44955L9.59877 6.94954ZM25.0993 24.5867L24.5993 24.5835L24.5993 24.5843L25.0993 24.5867ZM24.5565 25.1438V25.6438H24.5642L24.5719 25.6436L24.5565 25.1438ZM21.8585 25.1438L21.8431 25.6436L21.8508 25.6438H21.8585V25.1438ZM21.3157 24.5852H20.8157L20.8157 24.5863L21.3157 24.5852ZM17.2765 18.9666L16.7783 18.9246L16.7765 18.9455V18.9666H17.2765ZM17.2765 24.6972H16.7765V24.6975L17.2765 24.6972ZM16.7337 25.2572V25.7572H16.7414L16.7491 25.757L16.7337 25.2572ZM14.1161 25.2572L14.1148 25.7572H14.1161V25.2572ZM13.5575 24.6972L14.0575 24.6972V24.6972H13.5575ZM13.5575 13.9381L13.0578 13.9227L13.0575 13.9304V13.9381H13.5575ZM14.1175 13.3953L14.1173 13.8953H14.1175V13.3953ZM16.7337 13.3953V13.8953H16.734L16.7337 13.3953ZM17.2937 13.9381H17.7937V13.9304L17.7935 13.9227L17.2937 13.9381ZM17.2937 14.8642H16.7937V16.4824L17.7066 15.1463L17.2937 14.8642ZM20.7887 13.2675L20.7317 13.7642L20.7601 13.7675H20.7887V13.2675ZM25.1309 19.6529L25.6309 19.6561V19.6529H25.1309ZM23.6146 2V1.5H8.38544V2V2.5H23.6146V2ZM8.38544 2V1.5C6.5593 1.5 4.80797 2.22543 3.5167 3.5167L3.87025 3.87025L4.2238 4.2238C5.32754 3.12007 6.82452 2.5 8.38544 2.5V2ZM3.87025 3.87025L3.5167 3.5167C2.22543 4.80797 1.5 6.5593 1.5 8.38544H2H2.5C2.5 6.82452 3.12007 5.32754 4.2238 4.2238L3.87025 3.87025ZM2 8.38544H1.5V23.6146H2H2.5V8.38544H2ZM2 23.6146H1.5C1.5 25.4407 2.22543 27.192 3.5167 28.4833L3.87025 28.1297L4.2238 27.7762C3.12007 26.6725 2.5 25.1755 2.5 23.6146H2ZM3.87025 28.1297L3.5167 28.4833C4.80797 29.7746 6.55931 30.5 8.38544 30.5V30V29.5C6.82452 29.5 5.32754 28.8799 4.2238 27.7762L3.87025 28.1297ZM8.38544 30V30.5H23.6146V30V29.5H8.38544V30ZM23.6146 30V30.5C25.4407 30.5 27.192 29.7746 28.4833 28.4833L28.1297 28.1297L27.7762 27.7762C26.6725 28.8799 25.1755 29.5 23.6146 29.5V30ZM28.1297 28.1297L28.4833 28.4833C29.7746 27.192 30.5 25.4407 30.5 23.6146H30H29.5C29.5 25.1755 28.8799 26.6725 27.7762 27.7762L28.1297 28.1297ZM30 23.6146H30.5V8.38544H30H29.5V23.6146H30ZM30 8.38544H30.5C30.5 6.55931 29.7746 4.80797 28.4833 3.5167L28.1297 3.87025L27.7762 4.2238C28.8799 5.32754 29.5 6.82452 29.5 8.38544H30ZM28.1297 3.87025L28.4833 3.5167C27.192 2.22543 25.4407 1.5 23.6146 1.5V2V2.5C25.1755 2.5 26.6725 3.12007 27.7762 4.2238L28.1297 3.87025ZM11.4669 24.6039L10.9677 24.6327C10.9683 24.6428 10.9668 24.6529 10.9633 24.6624L11.433 24.8339L11.9027 25.0053C11.9529 24.8677 11.9745 24.7213 11.966 24.5751L11.4669 24.6039ZM11.433 24.8339L10.9633 24.6624C10.9598 24.6719 10.9545 24.6807 10.9475 24.688L11.3108 25.0316L11.6741 25.3751C11.7747 25.2687 11.8525 25.1428 11.9027 25.0053L11.433 24.8339ZM11.3108 25.0316L10.9475 24.688C10.9405 24.6954 10.9321 24.7012 10.9228 24.7052L11.1202 25.1646L11.3176 25.624C11.4522 25.5662 11.5735 25.4815 11.6741 25.3751L11.3108 25.0316ZM11.1202 25.1646L10.9228 24.7052C10.9135 24.7092 10.9035 24.7113 10.8933 24.7113L10.8925 25.2113L10.8917 25.7113C11.0381 25.7115 11.1831 25.6818 11.3176 25.624L11.1202 25.1646ZM10.8925 25.2113V24.7113H8.33662V25.2113V25.7113H10.8925V25.2113ZM8.33662 25.2113L8.3488 24.7114C8.32558 24.7109 8.3035 24.7012 8.28731 24.6845L7.92857 25.0328L7.56984 25.3811C7.76845 25.5857 8.03938 25.7042 8.32443 25.7111L8.33662 25.2113ZM7.92857 25.0328L8.28731 24.6845C8.27113 24.6679 8.26213 24.6455 8.26225 24.6223L7.76226 24.6197L7.26226 24.6171C7.26079 24.9022 7.37122 25.1765 7.56984 25.3811L7.92857 25.0328ZM7.76226 24.6197H8.26226V13.9897H7.76226H7.26226V24.6197H7.76226ZM7.76226 13.9897L8.26207 13.976C8.26179 13.9661 8.26352 13.9562 8.26713 13.9469L7.80136 13.7651L7.33559 13.5833C7.28337 13.7171 7.2585 13.8599 7.26245 14.0035L7.76226 13.9897ZM7.80136 13.7651L8.26713 13.9469C8.27074 13.9376 8.27618 13.9292 8.28311 13.9221L7.92479 13.5734L7.56648 13.2246C7.46632 13.3275 7.38781 13.4495 7.33559 13.5833L7.80136 13.7651ZM7.92479 13.5734L8.28311 13.9221C8.29004 13.915 8.29833 13.9093 8.30749 13.9054L8.11311 13.4448L7.91872 12.9841C7.78641 13.0399 7.66664 13.1217 7.56648 13.2246L7.92479 13.5734ZM8.11311 13.4448L8.30749 13.9054C8.31665 13.9016 8.32649 13.8996 8.33643 13.8996L8.33662 13.3996L8.3368 12.8996C8.1932 12.8995 8.05103 12.9283 7.91872 12.9841L8.11311 13.4448ZM8.33662 13.3996V13.8996H10.8925V13.3996V12.8996H8.33662V13.3996ZM10.8925 13.3996L10.8927 13.8996C10.9026 13.8996 10.9125 13.9016 10.9216 13.9054L11.116 13.4448L11.3104 12.9841C11.1781 12.9283 11.0359 12.8995 10.8923 12.8996L10.8925 13.3996ZM11.116 13.4448L10.9216 13.9054C10.9308 13.9093 10.9391 13.915 10.946 13.9221L11.3043 13.5734L11.6627 13.2246C11.5625 13.1217 11.4427 13.0399 11.3104 12.9841L11.116 13.4448ZM11.3043 13.5734L10.946 13.9221C10.953 13.9292 10.9584 13.9377 10.962 13.9469L11.4278 13.7651L11.8935 13.5833C11.8413 13.4495 11.7628 13.3275 11.6627 13.2246L11.3043 13.5734ZM11.4278 13.7651L10.962 13.9469C10.9656 13.9562 10.9673 13.9661 10.9671 13.976L11.4669 13.9897L11.9667 14.0035C11.9706 13.8599 11.9458 13.7171 11.8935 13.5833L11.4278 13.7651ZM11.4669 13.9897H10.9669V24.6039H11.4669H11.9669V13.9897H11.4669ZM9.56718 11.1639L9.57093 10.6639C9.35987 10.6623 9.15119 10.6192 8.9568 10.537L8.762 10.9975L8.5672 11.4579C8.88253 11.5913 9.22105 11.6613 9.56343 11.6639L9.56718 11.1639ZM8.762 10.9975L8.9568 10.537C8.76241 10.4547 8.58612 10.335 8.438 10.1847L8.08181 10.5356L7.72561 10.8864C7.96589 11.1304 8.25187 11.3246 8.5672 11.4579L8.762 10.9975ZM8.08181 10.5356L8.438 10.1847C8.28988 10.0343 8.17282 9.85623 8.09351 9.66063L7.63015 9.84851L7.16679 10.0364C7.29544 10.3537 7.48533 10.6425 7.72561 10.8864L8.08181 10.5356ZM7.63015 9.84851L8.09351 9.66063C8.0142 9.46504 7.9742 9.25573 7.97578 9.04467L7.47579 9.04092L6.97581 9.03718C6.97324 9.37955 7.03814 9.71908 7.16679 10.0364L7.63015 9.84851ZM7.47579 9.04092L7.97578 9.04467C7.97736 8.83361 8.0205 8.62493 8.10273 8.43054L7.64224 8.23574L7.18175 8.04094C7.04835 8.35628 6.97838 8.6948 6.97581 9.03718L7.47579 9.04092ZM7.64224 8.23574L8.10273 8.43054C8.18496 8.23615 8.30468 8.05986 8.45504 7.91174L8.10414 7.55555L7.75325 7.19935C7.50934 7.43964 7.31514 7.72561 7.18175 8.04094L7.64224 8.23574ZM8.10414 7.55555L8.45504 7.91174C8.6054 7.76362 8.78346 7.64656 8.97906 7.56725L8.79118 7.10389L8.60331 6.64053C8.28601 6.76918 7.99716 6.95907 7.75325 7.19935L8.10414 7.55555ZM8.79118 7.10389L8.97906 7.56725C9.17466 7.48795 9.38396 7.44794 9.59502 7.44952L9.59877 6.94954L9.60252 6.44955C9.26014 6.44699 8.92061 6.51188 8.60331 6.64053L8.79118 7.10389ZM9.59877 6.94954L9.58252 7.44927C10.0014 7.4629 10.3984 7.63968 10.6887 7.9419L11.0493 7.59549L11.4098 7.24908C10.9387 6.75873 10.2947 6.47191 9.61502 6.4498L9.59877 6.94954ZM11.0493 7.59549L10.6887 7.9419C10.9791 8.24412 11.1399 8.64784 11.1367 9.06694L11.6367 9.07069L12.1367 9.07444C12.1418 8.39447 11.881 7.73942 11.4098 7.24908L11.0493 7.59549ZM11.6367 9.07069L11.1367 9.06694C11.1336 9.48603 10.9668 9.8873 10.6719 10.1851L11.0272 10.5369L11.3825 10.8887C11.861 10.4055 12.1316 9.75441 12.1367 9.07444L11.6367 9.07069ZM11.0272 10.5369L10.6719 10.1851C10.377 10.483 9.97746 10.6538 9.55843 10.6611L9.56718 11.161L9.57593 11.6609C10.2558 11.649 10.9041 11.3719 11.3825 10.8887L11.0272 10.5369ZM25.0993 24.5867L24.5993 24.5843C24.5992 24.5999 24.5931 24.6148 24.5823 24.6259L24.9404 24.9748L25.2985 25.3237C25.4902 25.127 25.598 24.8636 25.5993 24.589L25.0993 24.5867ZM24.9404 24.9748L24.5823 24.6259C24.5714 24.6371 24.5567 24.6436 24.5411 24.644L24.5565 25.1438L24.5719 25.6436C24.8464 25.6351 25.1069 25.5205 25.2985 25.3237L24.9404 24.9748ZM24.5565 25.1438V24.6438H21.8585V25.1438V25.6438H24.5565V25.1438ZM21.8585 25.1438L21.8738 24.644C21.8583 24.6436 21.8435 24.637 21.8327 24.6259L21.4741 24.9743L21.1155 25.3228C21.3072 25.5201 21.5681 25.6351 21.8431 25.6436L21.8585 25.1438ZM21.4741 24.9743L21.8327 24.6259C21.8218 24.6147 21.8157 24.5998 21.8157 24.5842L21.3157 24.5852L20.8157 24.5863C20.8163 24.8614 20.9238 25.1255 21.1155 25.3228L21.4741 24.9743ZM21.3157 24.5852H21.8157V19.6687H21.3157H20.8157V24.5852H21.3157ZM21.3157 19.6687H21.8157C21.8157 19.3529 21.8779 18.4498 21.6346 17.6517C21.5091 17.2404 21.2925 16.8146 20.9128 16.4915C20.5253 16.1618 20.0122 15.9767 19.3686 15.9767V16.4767V16.9767C19.8105 16.9767 20.0836 17.099 20.2647 17.2531C20.4536 17.4138 20.5881 17.6484 20.6781 17.9434C20.8654 18.5579 20.8157 19.2508 20.8157 19.6687H21.3157ZM19.3686 16.4767V15.9767C18.3091 15.9767 17.6527 16.5351 17.2787 17.1845C16.9211 17.8054 16.8129 18.5143 16.7783 18.9246L17.2765 18.9666L17.7747 19.0086C17.8048 18.6521 17.8962 18.116 18.1452 17.6837C18.3778 17.2798 18.7352 16.9767 19.3686 16.9767V16.4767ZM17.2765 18.9666H16.7765V24.6972H17.2765H17.7765V18.9666H17.2765ZM17.2765 24.6972L16.7765 24.6975C16.7765 24.7131 16.7705 24.7281 16.7596 24.7393L17.1186 25.0872L17.4777 25.4352C17.6695 25.2374 17.7766 24.9726 17.7765 24.697L17.2765 24.6972ZM17.1186 25.0872L16.7596 24.7393C16.7487 24.7505 16.734 24.757 16.7184 24.7575L16.7337 25.2572L16.7491 25.757C17.0246 25.7485 17.2859 25.6331 17.4777 25.4352L17.1186 25.0872ZM16.7337 25.2572V24.7572H14.1161V25.2572V25.7572H16.7337V25.2572ZM14.1161 25.2572L14.1174 24.7572C14.1015 24.7572 14.0863 24.7509 14.0751 24.7396L13.7211 25.0927L13.367 25.4458C13.5652 25.6445 13.8342 25.7565 14.1148 25.7572L14.1161 25.2572ZM13.7211 25.0927L14.0751 24.7396C14.0638 24.7284 14.0575 24.7131 14.0575 24.6972L13.5575 24.6972H13.0575C13.0575 24.9779 13.1688 25.2471 13.367 25.4458L13.7211 25.0927ZM13.5575 24.6972H14.0575V13.9381H13.5575H13.0575V24.6972H13.5575ZM13.5575 13.9381L14.0573 13.9534C14.0578 13.9378 14.0643 13.9231 14.0755 13.9122L13.7275 13.5532L13.3795 13.1941C13.1817 13.3859 13.0663 13.6472 13.0578 13.9227L13.5575 13.9381ZM13.7275 13.5532L14.0755 13.9122C14.0867 13.9013 14.1017 13.8953 14.1173 13.8953L14.1175 13.3953L14.1178 12.8953C13.8422 12.8952 13.5774 13.0023 13.3795 13.1941L13.7275 13.5532ZM14.1175 13.3953V13.8953H16.7337V13.3953V12.8953H14.1175V13.3953ZM16.7337 13.3953L16.734 13.8953C16.7496 13.8953 16.7646 13.9013 16.7758 13.9122L17.1238 13.5532L17.4717 13.1941C17.2739 13.0023 17.0091 12.8952 16.7335 12.8953L16.7337 13.3953ZM17.1238 13.5532L16.7758 13.9122C16.787 13.9231 16.7935 13.9378 16.794 13.9534L17.2937 13.9381L17.7935 13.9227C17.785 13.6472 17.6696 13.3859 17.4717 13.1941L17.1238 13.5532ZM17.2937 13.9381H16.7937V14.8642H17.2937H17.7937V13.9381H17.2937ZM17.2937 14.8642L17.7066 15.1463C18.0372 14.6623 18.4937 14.2779 19.0268 14.0343L18.819 13.5795L18.6113 13.1247C17.9126 13.4439 17.3143 13.9479 16.8809 14.5821L17.2937 14.8642ZM18.819 13.5795L19.0268 14.0343C19.5599 13.7907 20.1494 13.6974 20.7317 13.7642L20.7887 13.2675L20.8458 12.7708C20.0826 12.6831 19.31 12.8055 18.6113 13.1247L18.819 13.5795ZM20.7887 13.2675V13.7675C21.7984 13.7675 22.511 14.0023 23.0236 14.3525C23.537 14.7034 23.8896 15.1975 24.132 15.7834C24.628 16.9822 24.6309 18.474 24.6309 19.6529H25.1309H25.6309C25.6309 18.5172 25.6416 16.8163 25.056 15.401C24.7577 14.6799 24.2971 14.0117 23.5878 13.5269C22.8776 13.0416 21.958 12.7675 20.7887 12.7675V13.2675ZM25.1309 19.6529L24.6309 19.6497L24.5993 24.5835L25.0993 24.5867L25.5993 24.5899L25.6309 19.6561L25.1309 19.6529Z" fill="#F7F8F8" fill-opacity="0.1" mask="url(#path-1-inside-1_360_9655)"></path>
+                  <defs>
+                    <radialgradient id="paint0_radial_360_9655" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="translate(16 40.85) rotate(90) scale(42 23.7784)">
+                      <stop stop-color="white"></stop>
+                      <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                    </radialgradient>
+                  </defs>
+                </svg>
+              </div>
+            </a>
+            <div class="footer-navigation-wrap">
+              <div class="footer-page-nav">
+                <p class="p-20 mobile-20">Navigation</p>
+                <div class="navigation-bulets">
+                  <a href="#" class="footer-link-item">Notre solution</a>
+                  <a href="#" class="footer-link-item">Fonctionnement</a>
+                  <a href="#" class="footer-link-item">Tarifs</a>
+                  <a href="#" class="footer-link-item">FAQ</a>
+                </div>
+              </div>
+              <div class="footer-page-nav">
+                <p class="p-20 mobile-20">Legals</p>
+                <div class="navigation-bulets">
+                  <a href="#" class="footer-link-item">Mentions légales</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-legals">
+            <div>© 2026 Mugnsoft</div>
+            <div class="footer-legal-divider"></div>
+            <div>Tous droits réservés.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script>
+const player = document.querySelector("wistia-player");
+const thumb = document.querySelector(".video-thumb-image");
+player.addEventListener("play", () => {
+    thumb.style.opacity = "0";
+    thumb.style.pointerEvents = "none";
+}, { once: true });
+  document.querySelectorAll(".faq-item-top").forEach(top => {
+    top.addEventListener("click", () => {
+        const answer = top.parentElement.querySelector(".faq-item-answer");
+        const vertical = top.querySelector(".faq-icon-line.vertical");
+        const lines = top.querySelectorAll(".faq-icon-line");
+        const opened = answer.classList.contains("open");
+        if (!opened) {
+            answer.classList.add("open");
+            answer.style.height = answer.scrollHeight + "px";
+            answer.addEventListener("transitionend", function handler() {
+                answer.style.height = "auto";
+                answer.removeEventListener("transitionend", handler);
+            });
+            if (vertical) {
+                vertical.style.transform = "rotate(90deg)";
+            }
+            lines.forEach(line => {
+                line.style.backgroundColor = "#028A49";
+            });
+        } else {
+            answer.style.height = answer.scrollHeight + "px";
+            requestAnimationFrame(() => {
+                answer.style.height = "0px";
+            });
+            answer.classList.remove("open");
+            if (vertical) {
+                vertical.style.transform = "rotate(0deg)";
+            }
+            lines.forEach(line => {
+                line.style.backgroundColor = "";
+            });
+        }
+    });
+});
+window.addEventListener("load", () => {
+    const widget = document.querySelector(".iclosed-widget");
+    const originalWidth = 1200; // реальная ширина виджета
+    const originalHeight = 800; // реальная высота
+    function resize() {
+        const scale = widget.parentElement.clientWidth / originalWidth;
+        widget.style.width = originalWidth + "px";
+        widget.style.height = originalHeight + "px";
+        widget.style.transform = `scale(${scale})`;
+        widget.style.transformOrigin = "top left";
+        widget.parentElement.style.height = originalHeight * scale + "px";
+    }
+    resize();
+    window.addEventListener("resize", resize);
+});
+</script>
+</body>
+</html>
