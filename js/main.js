@@ -4,15 +4,38 @@
     doc.className += ' is-touch';
   }
 
-  var nav = document.querySelector('.w-nav');
+  function loadScript(src, type) {
+    var script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+    if (type) script.type = type;
+    document.body.appendChild(script);
+  }
+
+  function observeOnce(target, onVisible, rootMargin) {
+    if (!target || !('IntersectionObserver' in window)) {
+      onVisible();
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      if (!entries[0].isIntersecting) return;
+      observer.disconnect();
+      onVisible();
+    }, { rootMargin: rootMargin || '200px 0px' });
+
+    observer.observe(target);
+  }
+
+  var nav = document.querySelector('.navbar');
   if (nav) {
-    var menuButton = nav.querySelector('.w-nav-button');
-    var navMenu = nav.querySelector('.w-nav-menu');
+    var menuButton = nav.querySelector('.menu-button');
+    var navMenu = nav.querySelector('.navbar-menu');
     var closeButton = nav.querySelector('.menu-close-icon-wrap');
 
     function setMenuOpen(isOpen) {
       if (!menuButton || !navMenu) return;
-      menuButton.classList.toggle('w--open', isOpen);
+      menuButton.classList.toggle('is-open', isOpen);
       if (isOpen) {
         navMenu.setAttribute('data-nav-menu-open', '');
         document.body.style.overflow = 'hidden';
@@ -24,7 +47,7 @@
 
     if (menuButton) {
       menuButton.addEventListener('click', function () {
-        setMenuOpen(!menuButton.classList.contains('w--open'));
+        setMenuOpen(!menuButton.classList.contains('is-open'));
       });
     }
 
@@ -35,9 +58,9 @@
     }
   }
 
-  document.querySelectorAll('.w-tabs').forEach(function (tabs) {
-    var links = tabs.querySelectorAll('.w-tab-link');
-    var panes = tabs.querySelectorAll('.w-tab-pane');
+  document.querySelectorAll('.tabs').forEach(function (tabs) {
+    var links = tabs.querySelectorAll('.tab-link');
+    var panes = tabs.querySelectorAll('.tab-pane');
 
     links.forEach(function (link) {
       link.addEventListener('click', function (event) {
@@ -46,29 +69,41 @@
         if (!tabId) return;
 
         links.forEach(function (item) {
-          item.classList.remove('w--current');
+          item.classList.remove('is-current');
         });
         panes.forEach(function (pane) {
-          pane.classList.remove('w--tab-active');
+          pane.classList.remove('is-active');
         });
 
-        link.classList.add('w--current');
-        var activePane = tabs.querySelector('.w-tab-pane[data-tab="' + tabId + '"]');
+        link.classList.add('is-current');
+        var activePane = tabs.querySelector('.tab-pane[data-tab="' + tabId + '"]');
         if (activePane) {
-          activePane.classList.add('w--tab-active');
+          activePane.classList.add('is-active');
         }
       });
     });
   });
 
-  var player = document.querySelector('wistia-player');
-  var thumb = document.querySelector('.video-thumb-image');
-  if (player && thumb) {
-    player.addEventListener('play', function () {
+  var videoEmbed = document.querySelector('.video-embed');
+  if (videoEmbed) {
+    observeOnce(videoEmbed, function () {
+      loadScript('https://fast.wistia.com/player.js');
+      loadScript('https://fast.wistia.com/embed/22htalunmu.js', 'module');
+    });
+  }
+
+  observeOnce(document.getElementById('form-section'), function () {
+    loadScript('https://app.iclosed.io/assets/widget.js');
+  });
+
+  document.addEventListener('play', function (event) {
+    if (event.target && event.target.tagName === 'WISTIA-PLAYER') {
+      var thumb = document.querySelector('.video-thumb-image');
+      if (!thumb) return;
       thumb.style.opacity = '0';
       thumb.style.pointerEvents = 'none';
-    }, { once: true });
-  }
+    }
+  }, true);
 
   document.querySelectorAll('.faq-item-top').forEach(function (top) {
     top.addEventListener('click', function () {
@@ -84,9 +119,7 @@
           answer.style.height = 'auto';
           answer.removeEventListener('transitionend', handler);
         });
-        if (vertical) {
-          vertical.style.transform = 'rotate(90deg)';
-        }
+        if (vertical) vertical.style.transform = 'rotate(90deg)';
         lines.forEach(function (line) {
           line.style.backgroundColor = '#028A49';
         });
@@ -96,9 +129,7 @@
           answer.style.height = '0px';
         });
         answer.classList.remove('open');
-        if (vertical) {
-          vertical.style.transform = 'rotate(0deg)';
-        }
+        if (vertical) vertical.style.transform = 'rotate(0deg)';
         lines.forEach(function (line) {
           line.style.backgroundColor = '';
         });

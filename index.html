@@ -4,48 +4,23 @@
   <meta charset="utf-8">
   <title>Mugnsoft</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/base.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/site.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
   <link href="favicon.ico" rel="icon" sizes="48x48">
   <link href="images/icons/favicon.svg" rel="icon" type="image/svg+xml">
   <link href="images/icons/favicon-32.png" rel="icon" type="image/png" sizes="32x32">
   <link href="images/icons/favicon-16.png" rel="icon" type="image/png" sizes="16x16">
   <link href="images/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-  <style>
-  .logos-wrap{
-    animation: marquee 20s linear infinite;
-}
-@keyframes marquee{
-    from{
-        transform:translateX(0);
-    }
-    to{
-        transform:translateX(-100%);
-    }
-}
-  .faq-item-answer{
-    height:0;
-    overflow:hidden;
-    transition:height .35s ease;
-  }
-  .faq-icon-line{
-      transition:background-color .3s ease;
-  }
-  .faq-icon-line.vertical{
-      transition:transform .3s ease;
-  }
-</style>
 </head>
 <body class="body">
-  <div data-animation="default" data-collapse="tiny" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-    <div class="container w-container">
+  <div role="banner" class="navbar">
+    <div class="container">
       <div class="navbar-content-wrapper">
-        <a href="#" class="logo-link w-inline-block">
-          <div class="footer-logo-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a href="#" class="logo-link">
+          <div class="footer-logo-icon embed"><svg width="100%" height="100%" viewbox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_i_360_8076)">
                 <path d="M0 24L7.43243 7.01887H15.3153L10.3604 0H27.9279L32.8829 7.01887L35.8108 0H45.045L50 7.01887L42.5676 24H34.4595L41.8919 7.01887H32.8829L25.4505 24H17.3423L24.7748 7.01887H15.3153L7.88288 24H0Z" fill="#DFDFDF"></path>
               </g>
@@ -84,11 +59,11 @@
           </div>
           <p class="brand-name">Mugnsoft</p>
         </a>
-        <nav role="navigation" class="navbar-menu w-nav-menu">
+        <nav role="navigation" class="navbar-menu-menu">
           <div class="nav-menu-content-wrapper">
             <div class="open-menu-top">
-              <a href="#" class="logo-link w-inline-block">
-                <div class="footer-logo-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a href="#" class="logo-link">
+                <div class="footer-logo-icon embed"><svg width="100%" height="100%" viewbox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_i_360_8076)">
                       <path d="M0 24L7.43243 7.01887H15.3153L10.3604 0H27.9279L32.8829 7.01887L35.8108 0H45.045L50 7.01887L42.5676 24H34.4595L41.8919 7.01887H32.8829L25.4505 24H17.3423L24.7748 7.01887H15.3153L7.88288 24H0Z" fill="#DFDFDF"></path>
                     </g>
@@ -110,28 +85,28 @@
               <div class="menu-close-icon-wrap"><img src="images/icons/majesticons_close-line.svg" loading="lazy" alt="" class="close-icon"></div>
             </div>
             <div class="nav-links-wrapper">
-              <a href="#" class="navbar-link-item w-nav-link">Notre solution</a>
-              <a href="#" class="navbar-link-item w-nav-link">Fonctionnement</a>
-              <a href="#" class="navbar-link-item w-nav-link">Tarifs</a>
-              <a href="#" class="navbar-link-item w-nav-link">FAQ</a>
+              <a href="#" class="navbar-link-item-link">Notre solution</a>
+              <a href="#" class="navbar-link-item-link">Fonctionnement</a>
+              <a href="#" class="navbar-link-item-link">Tarifs</a>
+              <a href="#" class="navbar-link-item-link">FAQ</a>
             </div>
-            <a href="#" class="white__btn menu-mob-only w-inline-block">
+            <a href="#" class="white__btn menu-mob-only">
               <div class="green__btn-text">Réserver une démo</div>
             </a>
           </div>
         </nav>
-        <div class="menu-button w-nav-button">
+        <div class="menu-button-button">
           <div class="menu-button-lines-wrap"><img src="images/icons/iconamoon_menu-burger-horizontal.svg" loading="lazy" alt="" class="menu-icon"></div>
         </div>
       </div>
     </div>
   </div>
   <section class="hero">
-    <div class="w-layout-blockcontainer container w-container">
+    <div class="layout-container container">
       <div class="hero-content-wrapper">
         <div class="hero-top-part-wrap">
           <div class="hero-top-bullet">
-            <div class="hero-top-bullet__icon w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="hero-top-bullet__icon embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4.28571L6 6.98571V12C6 14.7 8.625 18.1714 12 19.7143C15.375 18.9429 18 14.7 18 12V6.98571L12 4.28571Z" fill="#D0D6E0"></path>
               </svg>
             </div>
@@ -144,7 +119,7 @@
         </div>
         <div class="hero-btn-part">
           <div class="hero-double-btn-wrap">
-            <a href="#" class="green__btn w-inline-block">
+            <a href="#" class="green__btn">
               <div class="green__btn-inner hero_btn">
                 <div class="green__btn-text">Réserver une démo</div><img src="images/icons/arrow.svg" loading="lazy" alt="" class="btn-icon">
               </div>
@@ -154,7 +129,7 @@
             </div>
           </div>
           <div class="star-part">
-            <div class="star-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="star-icon embed"><svg width="100%" height="100%" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z" fill="#00FF80"></path>
               </svg>
             </div>
@@ -167,11 +142,9 @@
     <section class="with-bg-section">
       <div class="video-block-inner">
         <div class="video-content-wrapper">
-          <div class="video-embed w-embed w-script">
-            <script src="https://fast.wistia.com/player.js" async=""></script>
-            <script src="https://fast.wistia.com/embed/22htalunmu.js" async="" type="module"></script>
+          <div class="video-embed embed">
             <style>wistia-player[media-id='22htalunmu']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/22htalunmu/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style> <wistia-player media-id="22htalunmu" aspect="0.5625"></wistia-player>
-          </div><picture><source type="image/avif" srcset="images/content/video-thumb-500.avif 500w, images/content/video-thumb-800.avif 800w, images/content/video-thumb-1080.avif 1080w, images/content/video-thumb-1600.avif 1600w, images/content/video-thumb-2000.avif 2000w, images/content/video-thumb.avif 2496w" sizes="(max-width: 2496px) 100vw, 2496px"><img src="images/content/video-thumb.png" loading="lazy" sizes="(max-width: 2496px) 100vw, 2496px" srcset="images/content/video-thumb-500.png 500w, images/content/video-thumb-800.png 800w, images/content/video-thumb-1080.png 1080w, images/content/video-thumb-1600.png 1600w, images/content/video-thumb-2000.png 2000w, images/content/video-thumb.png 2496w" alt="" class="video-thumb-image"></picture>
+          </div><picture><source type="image/avif" srcset="images/content/video-thumb-500.avif 500w, images/content/video-thumb-800.avif 800w, images/content/video-thumb-1080.avif 1080w, images/content/video-thumb-1600.avif 1600w, images/content/video-thumb-2000.avif 2000w, images/content/video-thumb.avif 2496w" sizes="(max-width: 2496px) 100vw, 2496px"><img src="images/content/video-thumb.png" sizes="(max-width: 2496px) 100vw, 2496px" srcset="images/content/video-thumb-500.png 500w, images/content/video-thumb-800.png 800w, images/content/video-thumb-1080.png 1080w, images/content/video-thumb-1600.png 1600w, images/content/video-thumb-2000.png 2000w, images/content/video-thumb.png 2496w" alt="" class="video-thumb-image" fetchpriority="high" decoding="async"></picture>
         </div>
         <div class="bg-green-linear"></div>
         <div class="video-block-shadow-vlack"></div>
@@ -187,7 +160,7 @@
     </div>
   </section>
   <section class="review-first">
-    <div class="w-layout-blockcontainer container w-container">
+    <div class="layout-container container">
       <div class="reviews-grid">
         <div class="white-border">
           <div class="review-item">
@@ -217,7 +190,7 @@
     </div>
   </section>
   <section class="section-top-line">
-    <div class="w-layout-blockcontainer container w-container">
+    <div class="layout-container container">
       <div class="les-bugs-content-wrapper">
         <div class="heading-with-description">
           <h2><span class="op-40">Les bugs de votre application</span> sont souvent détectés trop tard</h2>
@@ -239,7 +212,7 @@
           </div>
         </div>
         <div class="bugs-btn-wrapper">
-          <a href="#form-section" class="green__btn w-inline-block">
+          <a href="#form-section" class="green__btn">
             <div class="green__btn-inner">
               <div class="green__btn-text">Réserver une démo</div><img src="images/icons/arrow.svg" loading="lazy" alt="">
             </div>
@@ -249,29 +222,29 @@
     </div>
   </section>
   <section class="tabs-section">
-    <div class="w-layout-blockcontainer container w-container">
+    <div class="layout-container container">
       <div class="tabs-block-item">
         <div class="heading-with-description">
           <h2><span class="op-40">Tout ce dont votre application </span>a besoin pour rester fiable</h2>
           <div class="tabs-heading-p">Mugnsoft surveille vos parcours utilisateurs en continu et alerte vos équipes avant que vos clients ne subissent le moindre problème.</div>
         </div>
-        <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="w-tabs">
-          <div class="tabs-menu w-tab-menu">
-            <a data-tab="Tab 1" class="tab-link w-inline-block w-tab-link w--current">
+        <div class="tabs">
+          <div class="tabs-menu">
+            <a data-tab="Tab 1" class="tab-link is-current">
               <div class="tab-link-text">Surveillance des parcours</div>
             </a>
-            <a data-tab="Tab 2" class="tab-link w-inline-block w-tab-link">
+            <a data-tab="Tab 2" class="tab-link">
               <div class="tab-link-text">Détection des bugs</div>
             </a>
-            <a data-tab="Tab 3" class="tab-link w-inline-block w-tab-link">
+            <a data-tab="Tab 3" class="tab-link">
               <div class="tab-link-text">Déploiement rapide</div>
             </a>
-            <a data-tab="Tab 4" class="tab-link w-inline-block w-tab-link">
+            <a data-tab="Tab 4" class="tab-link">
               <div class="tab-link-text">Alertes instantanées</div>
             </a>
           </div>
-          <div class="tabs-content w-tab-content">
-            <div data-tab="Tab 1" class="tab-content-wrapper w-tab-pane w--tab-active">
+          <div class="tabs-content">
+            <div data-tab="Tab 1" class="tab-content-wrapper tab-pane is-active">
               <div class="tab-content-inner">
                 <div class="tab-item-content">
                   <h3 class="tabs-heading">Simulez les actions de vos utilisateurs en continu.</h3>
@@ -287,7 +260,7 @@
                       <p>Détection immédiate dès qu&#x27;un parcours échoue</p>
                     </div>
                   </div>
-                  <a href="#form-section" class="green__btn tabs w-inline-block">
+                  <a href="#form-section" class="green__btn tabs">
                     <div class="green__btn-inner">
                       <div class="green__btn-text">Réserver une démo</div><img src="images/icons/arrow.svg" loading="lazy" alt="">
                     </div>
@@ -295,7 +268,7 @@
                 </div><picture><source type="image/avif" srcset="images/content/tab_1-500.avif 500w, images/content/tab_1-800.avif 800w, images/content/tab_1-1080.avif 1080w, images/content/tab_1.avif 1144w" sizes="100vw"><img src="images/content/tab_1.png" loading="lazy" sizes="100vw" srcset="images/content/tab_1-500.png 500w, images/content/tab_1-800.png 800w, images/content/tab_1-1080.png 1080w, images/content/tab_1.png 1144w" alt="" class="tab-image"></picture>
               </div>
             </div>
-            <div data-tab="Tab 2" class="tab-content-wrapper w-tab-pane">
+            <div data-tab="Tab 2" class="tab-content-wrapper tab-pane">
               <div class="tab-content-inner">
                 <div class="tab-item-content">
                   <h3 class="tabs-heading">Repérez les bugs avant que vos utilisateurs ne les trouvent.</h3>
@@ -311,7 +284,7 @@
                       <p>Historique complet des incidents pour faciliter le diagnostic</p>
                     </div>
                   </div>
-                  <a href="#form-section" class="green__btn tabs w-inline-block">
+                  <a href="#form-section" class="green__btn tabs">
                     <div class="green__btn-inner">
                       <div class="green__btn-text">Réserver une démo</div><img src="images/icons/arrow.svg" loading="lazy" alt="">
                     </div>
@@ -319,7 +292,7 @@
                 </div><picture><source type="image/avif" srcset="images/content/tab-2-500.avif 500w, images/content/tab-2-800.avif 800w, images/content/tab-2-1080.avif 1080w, images/content/tab-2.avif 1144w" sizes="100vw"><img src="images/content/tab-2.png" loading="lazy" sizes="100vw" srcset="images/content/tab-2-500.png 500w, images/content/tab-2-800.png 800w, images/content/tab-2-1080.png 1080w, images/content/tab-2.png 1144w" alt="" class="tab-image"></picture>
               </div>
             </div>
-            <div data-tab="Tab 3" class="tab-content-wrapper w-tab-pane">
+            <div data-tab="Tab 3" class="tab-content-wrapper tab-pane">
               <div class="tab-content-inner">
                 <div class="tab-item-content">
                   <h3 class="tabs-heading">Soyez le premier à savoir. Pas le dernier.</h3>
@@ -335,7 +308,7 @@
                       <p>Zéro délai entre la détection et l&#x27;alerte</p>
                     </div>
                   </div>
-                  <a href="#form-section" class="green__btn tabs w-inline-block">
+                  <a href="#form-section" class="green__btn tabs">
                     <div class="green__btn-inner">
                       <div class="green__btn-text">Réserver une démo</div><img src="images/icons/arrow.svg" loading="lazy" alt="">
                     </div>
@@ -343,7 +316,7 @@
                 </div><picture><source type="image/avif" srcset="images/content/tab-3-500.avif 500w, images/content/tab-3-800.avif 800w, images/content/tab-3-1080.avif 1080w, images/content/tab-3.avif 1144w" sizes="100vw"><img src="images/content/tab-3.png" loading="lazy" sizes="100vw" srcset="images/content/tab-3-500.png 500w, images/content/tab-3-800.png 800w, images/content/tab-3-1080.png 1080w, images/content/tab-3.png 1144w" alt="" class="tab-image"></picture>
               </div>
             </div>
-            <div data-tab="Tab 4" class="tab-content-wrapper w-tab-pane">
+            <div data-tab="Tab 4" class="tab-content-wrapper tab-pane">
               <div class="tab-content-inner">
                 <div class="tab-item-content">
                   <h3 class="tabs-heading">Opérationnel en moins de 10 minutes. Sans toucher à votre code.</h3>
@@ -359,7 +332,7 @@
                       <p>Compatible avec toutes les stacks web</p>
                     </div>
                   </div>
-                  <a href="#form-section" class="green__btn tabs w-inline-block">
+                  <a href="#form-section" class="green__btn tabs">
                     <div class="green__btn-inner">
                       <div class="green__btn-text">Réserver une démo</div><img src="images/icons/arrow.svg" loading="lazy" alt="">
                     </div>
@@ -373,7 +346,7 @@
     </div>
   </section>
   <section class="section-top-line">
-    <div class="w-layout-blockcontainer container w-container">
+    <div class="layout-container container">
       <div class="les-bugs-content-wrapper">
         <div class="heading-with-description">
           <h2>Détectez. Alertez. Protégez</h2>
@@ -406,7 +379,7 @@
           </div>
         </div>
         <div class="bugs-btn-wrapper no-margin">
-          <a href="#form-section" class="green__btn w-inline-block">
+          <a href="#form-section" class="green__btn">
             <div class="green__btn-inner">
               <div class="green__btn-text">Réserver une démo</div><img src="images/icons/arrow.svg" loading="lazy" alt="">
             </div>
@@ -461,7 +434,7 @@
           </div>
         </div>
         <div class="bugs-btn-wrapper no-margin">
-          <a href="#form-section" class="green__btn w-inline-block">
+          <a href="#form-section" class="green__btn">
             <div class="green__btn-inner">
               <div class="green__btn-text">Réserver une démo</div><img src="images/icons/arrow.svg" loading="lazy" alt="">
             </div>
@@ -472,7 +445,7 @@
     </div>
   </section>
   <section class="plans">
-    <div class="w-layout-blockcontainer container w-container">
+    <div class="layout-container container">
       <div class="plans-content-wrapper">
         <div class="heading-with-description">
           <h2><span class="op-40">Un plan pour chaque étape</span> de votre croissance.</h2>
@@ -493,42 +466,42 @@
             </div>
             <div class="plan-bullets">
               <div class="plan-bullet_item">
-                <div class="plan-checkmark w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
                 <div>Jusqu&#x27;à 20 parcours utilisateurs surveillés</div>
               </div>
               <div class="plan-bullet_item">
-                <div class="plan-checkmark w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
                 <div>Vérifications automatiques 24/7</div>
               </div>
               <div class="plan-bullet_item">
-                <div class="plan-checkmark w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
                 <div>Alertes instantanées : Email, SMS, Slack, Webhook</div>
               </div>
               <div class="plan-bullet_item">
-                <div class="plan-checkmark w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
                 <div>Installation locale, aucun hébergement requis</div>
               </div>
               <div class="plan-bullet_item">
-                <div class="plan-checkmark w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
                 <div>Déploiement en moins de 10 minutes</div>
               </div>
               <div class="plan-bullet_item">
-                <div class="plan-checkmark w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
@@ -546,7 +519,7 @@
                 <h2>Sur mesure</h2>
               </div>
               <p class="text-18">La surveillance complète, configurée et gérée pour vous.</p>
-              <a href="#form-section" class="green__btn w-inline-block">
+              <a href="#form-section" class="green__btn">
                 <div class="green__btn-inner">
                   <div class="green__btn-text">Réserver une démo</div><img src="images/icons/arrow.svg" loading="lazy" alt="">
                 </div>
@@ -554,56 +527,56 @@
             </div>
             <div class="plan-bullets">
               <div class="all-in-pulse">
-                <div class="all-in-pulse-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="all-in-pulse-icon embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 5V19M5 12H19" stroke="#F7F8F8" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
                 <div>Tout ce qui est inclus dans Pulse</div>
               </div>
               <div class="plan-bullet_item">
-                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark green embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
                 <div>Parcours utilisateurs illimités</div>
               </div>
               <div class="plan-bullet_item">
-                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark green embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
                 <div>Hébergement SaaS géré à 100% par Mugnsoft</div>
               </div>
               <div class="plan-bullet_item">
-                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark green embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
                 <div>Rapports d&#x27;incidents illimités</div>
               </div>
               <div class="plan-bullet_item">
-                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark green embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
                 <div>Intégrations avancées : Gitlab, outils tiers</div>
               </div>
               <div class="plan-bullet_item">
-                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark green embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
                 <div>Support premium &amp; accompagnement dédié</div>
               </div>
               <div class="plan-bullet_item">
-                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark green embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
                 <div>Configuration assistée par notre équipe</div>
               </div>
               <div class="plan-bullet_item">
-                <div class="plan-checkmark green w-embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="plan-checkmark green embed"><svg width="100%" height="100%" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12L10 17L20 7" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linejoin="round"></path>
                   </svg>
                 </div>
@@ -616,7 +589,7 @@
     </div>
   </section>
   <section class="section-top-line reviews">
-    <div class="w-layout-blockcontainer container w-container">
+    <div class="layout-container container">
       <div class="reviews-content-wrapper">
         <div class="reviews-text-part">
           <div class="heading-with-description">
@@ -624,7 +597,7 @@
             <div class="reviews-p">Ils ont arrêté d&#x27;apprendre leurs pannes par leurs clients.</div>
           </div>
           <div class="star-part">
-            <div class="star-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="star-icon embed"><svg width="100%" height="100%" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z" fill="#00FF80"></path>
               </svg>
             </div>
@@ -723,13 +696,13 @@
     </div>
   </section>
   <section class="integrations">
-    <div class="w-layout-blockcontainer container w-container">
+    <div class="layout-container container">
       <div class="integrations-content-wrapper">
         <div class="heading-with-description integ">
           <h2><span class="op-40">Mugnsoft s&#x27;intègre aux</span> outils que vous utilisez déjà.</h2>
           <div>Pas de changement dans votre stack. Connectez Mugnsoft en quelques clics et recevez vos alertes là où votre équipe travaille.</div>
         </div>
-        <a href="#form-section" class="green__btn w-inline-block">
+        <a href="#form-section" class="green__btn">
           <div class="green__btn-inner">
             <div class="green__btn-text">Réserver une démo</div><img src="images/icons/arrow.svg" loading="lazy" alt="">
           </div>
@@ -744,9 +717,8 @@
           <h2>Réservez une démo avec Mugnsoft</h2>
           <div class="reserve-demo-p">Choisissez un créneau. On vous présente la solution, on répond à vos questions, et on configure ensemble vos premiers parcours critiques.</div>
         </div>
-        <div class="iclosed-widget w-embed w-script"><!--  iClosed inline widget begin  -->
+        <div class="iclosed-widget embed"><!--  iClosed inline widget begin  -->
           <div class="iclosed-widget" data-url="https://app.iclosed.io/e/Clicknland/audit" title="Audit gratuit en 1:1 avec Lucas" style="width: 100%; height: 100%"></div>
-          <script type="text/javascript" src="https://app.iclosed.io/assets/widget.js" async=""></script>
           <!--  iClosed inline widget end  -->
         </div>
       </div>
@@ -754,7 +726,7 @@
     </div>
   </section>
   <section class="faq">
-    <div class="w-layout-blockcontainer container w-container">
+    <div class="layout-container container">
       <div class="faq-content-wrapper">
         <div class="faq-text-wrap">
           <div class="heading-with-description">
@@ -843,7 +815,7 @@
     </div>
   </section>
   <section class="cta-section">
-    <div class="w-layout-blockcontainer container w-container">
+    <div class="layout-container container">
       <div class="white-border cta">
         <div class="cta-content-wrapper">
           <div class="heading-with-description centered">
@@ -851,7 +823,7 @@
             <div class="cta-p">Pas de changement dans votre stack. Connectez Mugnsoft en quelques clics et recevez vos alertes là où votre équipe travaille.</div>
           </div><img src="images/icons/logo-cta.svg" loading="lazy" alt="" class="logo-cta">
           <div class="footer-double-btn-wrap">
-            <a href="#form-section" class="green__btn w-inline-block">
+            <a href="#form-section" class="green__btn">
               <div class="green__btn-inner">
                 <div class="green__btn-text">Réserver une démo</div><img src="images/icons/arrow.svg" loading="lazy" alt="" class="btn-icon">
               </div>
@@ -865,11 +837,11 @@
     </div>
   </section>
   <section class="footer">
-    <div class="w-layout-blockcontainer container w-container">
+    <div class="layout-container container">
       <div class="footer-content-wrapper">
         <div class="footer-top-part">
-          <a href="#" class="logo-link w-inline-block">
-            <div class="footer-logo-icon w-embed"><svg width="100%" height="100%" viewbox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a href="#" class="logo-link">
+            <div class="footer-logo-icon embed"><svg width="100%" height="100%" viewbox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_i_360_8076)">
                   <path d="M0 24L7.43243 7.01887H15.3153L10.3604 0H27.9279L32.8829 7.01887L35.8108 0H45.045L50 7.01887L42.5676 24H34.4595L41.8919 7.01887H32.8829L25.4505 24H17.3423L24.7748 7.01887H15.3153L7.88288 24H0Z" fill="#DFDFDF"></path>
                 </g>
@@ -888,14 +860,14 @@
             </div>
             <p class="brand-name">Mugnsoft</p>
           </a>
-          <a href="#" class="white__btn w-inline-block">
+          <a href="#" class="white__btn">
             <div class="green__btn-text">Réserver une démo</div>
           </a>
         </div>
         <div class="footer-main-content">
           <div class="footer-main-links">
-            <a href="#" class="footer-linkdin-link w-inline-block">
-              <div class="linkdin-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="#" class="footer-linkdin-link">
+              <div class="linkdin-icon embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <mask id="path-1-inside-1_360_9655" fill="white">
                     <path d="M23.6146 2H8.38544C6.69191 2 5.06775 2.67275 3.87025 3.87025C2.67275 5.06775 2 6.69191 2 8.38544V23.6146C2 25.3081 2.67275 26.9322 3.87025 28.1297C5.06775 29.3273 6.69191 30 8.38544 30H23.6146C25.3081 30 26.9322 29.3273 28.1297 28.1297C29.3273 26.9322 30 25.3081 30 23.6146V8.38544C30 6.69191 29.3273 5.06775 28.1297 3.87025C26.9322 2.67275 25.3081 2 23.6146 2ZM11.4669 24.6039C11.4714 24.6821 11.4598 24.7603 11.433 24.8339C11.4062 24.9074 11.3646 24.9747 11.3108 25.0316C11.257 25.0884 11.1921 25.1337 11.1202 25.1646C11.0483 25.1955 10.9708 25.2114 10.8925 25.2113H8.33662C8.18248 25.2075 8.03597 25.1434 7.92857 25.0328C7.82118 24.9222 7.76146 24.7739 7.76226 24.6197V13.9897C7.76015 13.913 7.77344 13.8366 7.80136 13.7651C7.82928 13.6936 7.87125 13.6284 7.92479 13.5734C7.97834 13.5183 8.04237 13.4746 8.11311 13.4448C8.18384 13.4149 8.25984 13.3996 8.33662 13.3996H10.8925C10.9693 13.3996 11.0453 13.4149 11.116 13.4448C11.1868 13.4746 11.2508 13.5183 11.3043 13.5734C11.3579 13.6284 11.3999 13.6936 11.4278 13.7651C11.4557 13.8366 11.469 13.913 11.4669 13.9897V24.6039ZM9.56718 11.1639C9.29046 11.1618 9.01686 11.1053 8.762 10.9975C8.50714 10.8896 8.27601 10.7327 8.08181 10.5356C7.8876 10.3384 7.73413 10.105 7.63015 9.84851C7.52617 9.59206 7.47372 9.31764 7.47579 9.04092C7.47787 8.7642 7.53443 8.4906 7.64224 8.23574C7.75005 7.98088 7.90701 7.74975 8.10414 7.55555C8.30128 7.36135 8.53474 7.20787 8.79118 7.10389C9.04763 6.99991 9.32205 6.94746 9.59877 6.94954C10.148 6.9674 10.6686 7.1992 11.0493 7.59549C11.43 7.99177 11.6408 8.52116 11.6367 9.07069C11.6326 9.62022 11.4139 10.1464 11.0272 10.5369C10.6406 10.9274 10.1166 11.1514 9.56718 11.161M25.0993 24.5867C25.0986 24.7318 25.0416 24.8709 24.9404 24.9748C24.8392 25.0788 24.7015 25.1393 24.5565 25.1438H21.8585C21.7132 25.1393 21.5754 25.0786 21.4741 24.9743C21.3728 24.8701 21.316 24.7306 21.3157 24.5852V19.6687C21.3157 18.935 21.5397 16.4767 19.3686 16.4767C17.6757 16.4767 17.3411 18.1998 17.2765 18.9666V24.6972C17.2766 24.8428 17.22 24.9827 17.1186 25.0872C17.0173 25.1918 16.8793 25.2528 16.7337 25.2572H14.1161C13.9678 25.2569 13.8258 25.1977 13.7211 25.0927C13.6163 24.9877 13.5575 24.8455 13.5575 24.6972V13.9381C13.562 13.7925 13.623 13.6545 13.7275 13.5532C13.8321 13.4518 13.972 13.3952 14.1175 13.3953H16.7337C16.8793 13.3952 17.0192 13.4518 17.1238 13.5532C17.2283 13.6545 17.2893 13.7925 17.2937 13.9381V14.8642C17.6757 14.3051 18.2031 13.8609 18.819 13.5795C19.435 13.2981 20.116 13.1902 20.7887 13.2675C25.1467 13.2675 25.1309 17.3383 25.1309 19.6529L25.0993 24.5867Z"></path>
                   </mask>
@@ -938,6 +910,6 @@
       </div>
     </div>
   </section>
-  <script src="js/main.js" type="text/javascript"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
