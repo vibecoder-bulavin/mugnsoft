@@ -60,4 +60,69 @@
       });
     });
   });
+
+  var player = document.querySelector('wistia-player');
+  var thumb = document.querySelector('.video-thumb-image');
+  if (player && thumb) {
+    player.addEventListener('play', function () {
+      thumb.style.opacity = '0';
+      thumb.style.pointerEvents = 'none';
+    }, { once: true });
+  }
+
+  document.querySelectorAll('.faq-item-top').forEach(function (top) {
+    top.addEventListener('click', function () {
+      var answer = top.parentElement.querySelector('.faq-item-answer');
+      var vertical = top.querySelector('.faq-icon-line.vertical');
+      var lines = top.querySelectorAll('.faq-icon-line');
+      var opened = answer.classList.contains('open');
+
+      if (!opened) {
+        answer.classList.add('open');
+        answer.style.height = answer.scrollHeight + 'px';
+        answer.addEventListener('transitionend', function handler() {
+          answer.style.height = 'auto';
+          answer.removeEventListener('transitionend', handler);
+        });
+        if (vertical) {
+          vertical.style.transform = 'rotate(90deg)';
+        }
+        lines.forEach(function (line) {
+          line.style.backgroundColor = '#028A49';
+        });
+      } else {
+        answer.style.height = answer.scrollHeight + 'px';
+        requestAnimationFrame(function () {
+          answer.style.height = '0px';
+        });
+        answer.classList.remove('open');
+        if (vertical) {
+          vertical.style.transform = 'rotate(0deg)';
+        }
+        lines.forEach(function (line) {
+          line.style.backgroundColor = '';
+        });
+      }
+    });
+  });
+
+  window.addEventListener('load', function () {
+    var widget = document.querySelector('.iclosed-widget');
+    if (!widget || !widget.parentElement) return;
+
+    var originalWidth = 1200;
+    var originalHeight = 800;
+
+    function resize() {
+      var scale = widget.parentElement.clientWidth / originalWidth;
+      widget.style.width = originalWidth + 'px';
+      widget.style.height = originalHeight + 'px';
+      widget.style.transform = 'scale(' + scale + ')';
+      widget.style.transformOrigin = 'top left';
+      widget.parentElement.style.height = originalHeight * scale + 'px';
+    }
+
+    resize();
+    window.addEventListener('resize', resize);
+  });
 })();

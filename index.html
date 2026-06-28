@@ -10,9 +10,11 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="favicon.ico" rel="icon" sizes="48x48">
   <link href="images/icons/favicon.svg" rel="icon" type="image/svg+xml">
   <link href="images/icons/favicon-32.png" rel="icon" type="image/png" sizes="32x32">
-  <link href="images/icons/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="images/icons/favicon-16.png" rel="icon" type="image/png" sizes="16x16">
+  <link href="images/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
   <style>
   .logos-wrap{
     animation: marquee 20s linear infinite;
@@ -937,62 +939,5 @@
     </div>
   </section>
   <script src="js/main.js" type="text/javascript"></script>
-  <script>
-const player = document.querySelector("wistia-player");
-const thumb = document.querySelector(".video-thumb-image");
-player.addEventListener("play", () => {
-    thumb.style.opacity = "0";
-    thumb.style.pointerEvents = "none";
-}, { once: true });
-  document.querySelectorAll(".faq-item-top").forEach(top => {
-    top.addEventListener("click", () => {
-        const answer = top.parentElement.querySelector(".faq-item-answer");
-        const vertical = top.querySelector(".faq-icon-line.vertical");
-        const lines = top.querySelectorAll(".faq-icon-line");
-        const opened = answer.classList.contains("open");
-        if (!opened) {
-            answer.classList.add("open");
-            answer.style.height = answer.scrollHeight + "px";
-            answer.addEventListener("transitionend", function handler() {
-                answer.style.height = "auto";
-                answer.removeEventListener("transitionend", handler);
-            });
-            if (vertical) {
-                vertical.style.transform = "rotate(90deg)";
-            }
-            lines.forEach(line => {
-                line.style.backgroundColor = "#028A49";
-            });
-        } else {
-            answer.style.height = answer.scrollHeight + "px";
-            requestAnimationFrame(() => {
-                answer.style.height = "0px";
-            });
-            answer.classList.remove("open");
-            if (vertical) {
-                vertical.style.transform = "rotate(0deg)";
-            }
-            lines.forEach(line => {
-                line.style.backgroundColor = "";
-            });
-        }
-    });
-});
-window.addEventListener("load", () => {
-    const widget = document.querySelector(".iclosed-widget");
-    const originalWidth = 1200; // реальная ширина виджета
-    const originalHeight = 800; // реальная высота
-    function resize() {
-        const scale = widget.parentElement.clientWidth / originalWidth;
-        widget.style.width = originalWidth + "px";
-        widget.style.height = originalHeight + "px";
-        widget.style.transform = `scale(${scale})`;
-        widget.style.transformOrigin = "top left";
-        widget.parentElement.style.height = originalHeight * scale + "px";
-    }
-    resize();
-    window.addEventListener("resize", resize);
-});
-</script>
 </body>
 </html>
