@@ -69,7 +69,7 @@ p {
 }
 
 .hero {
-  background-image: url('../images/backgrounds/hero-bg-500.png');
+  background-image: image-set(url('../images/backgrounds/hero-bg-500.avif') type('image/avif'), url('../images/backgrounds/hero-bg-500.png') type('image/png'));
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -78,31 +78,31 @@ p {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url('../images/backgrounds/hero-bg-800.png');
+    background-image: image-set(url('../images/backgrounds/hero-bg-800.avif') type('image/avif'), url('../images/backgrounds/hero-bg-800.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 1024px) {
   .hero {
-    background-image: url('../images/backgrounds/hero-bg-1080.png');
+    background-image: image-set(url('../images/backgrounds/hero-bg-1080.avif') type('image/avif'), url('../images/backgrounds/hero-bg-1080.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 1440px) {
   .hero {
-    background-image: url('../images/backgrounds/hero-bg-1600.png');
+    background-image: image-set(url('../images/backgrounds/hero-bg-1600.avif') type('image/avif'), url('../images/backgrounds/hero-bg-1600.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 1920px) {
   .hero {
-    background-image: url('../images/backgrounds/hero-bg-2000.png');
+    background-image: image-set(url('../images/backgrounds/hero-bg-2000.avif') type('image/avif'), url('../images/backgrounds/hero-bg-2000.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 2560px) {
   .hero {
-    background-image: url('../images/backgrounds/hero-bg-2600.png');
+    background-image: image-set(url('../images/backgrounds/hero-bg-2600.avif') type('image/avif'), url('../images/backgrounds/hero-bg-2600.png') type('image/png'));
   }
 }
 
@@ -513,7 +513,7 @@ p {
 }
 
 .tabs-section {
-  background-image: url('../images/backgrounds/tabs-bg-500.png');
+  background-image: image-set(url('../images/backgrounds/tabs-bg-500.avif') type('image/avif'), url('../images/backgrounds/tabs-bg-500.png') type('image/png'));
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -523,31 +523,31 @@ p {
 
 @media screen and (min-width: 768px) {
   .tabs-section {
-    background-image: url('../images/backgrounds/tabs-bg-800.png');
+    background-image: image-set(url('../images/backgrounds/tabs-bg-800.avif') type('image/avif'), url('../images/backgrounds/tabs-bg-800.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 1024px) {
   .tabs-section {
-    background-image: url('../images/backgrounds/tabs-bg-1080.png');
+    background-image: image-set(url('../images/backgrounds/tabs-bg-1080.avif') type('image/avif'), url('../images/backgrounds/tabs-bg-1080.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 1440px) {
   .tabs-section {
-    background-image: url('../images/backgrounds/tabs-bg-1600.png');
+    background-image: image-set(url('../images/backgrounds/tabs-bg-1600.avif') type('image/avif'), url('../images/backgrounds/tabs-bg-1600.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 1920px) {
   .tabs-section {
-    background-image: url('../images/backgrounds/tabs-bg-2000.png');
+    background-image: image-set(url('../images/backgrounds/tabs-bg-2000.avif') type('image/avif'), url('../images/backgrounds/tabs-bg-2000.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 2560px) {
   .tabs-section {
-    background-image: url('../images/backgrounds/tabs-bg-2600.png');
+    background-image: image-set(url('../images/backgrounds/tabs-bg-2600.avif') type('image/avif'), url('../images/backgrounds/tabs-bg-2600.png') type('image/png'));
   }
 }
 
@@ -832,7 +832,7 @@ p {
 }
 
 .plans {
-  background-image: url('../images/backgrounds/plan-dp-bg-500.png');
+  background-image: image-set(url('../images/backgrounds/plan-dp-bg-500.avif') type('image/avif'), url('../images/backgrounds/plan-dp-bg-500.png') type('image/png'));
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -842,31 +842,31 @@ p {
 
 @media screen and (min-width: 768px) {
   .plans {
-    background-image: url('../images/backgrounds/plan-dp-bg-800.png');
+    background-image: image-set(url('../images/backgrounds/plan-dp-bg-800.avif') type('image/avif'), url('../images/backgrounds/plan-dp-bg-800.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 1024px) {
   .plans {
-    background-image: url('../images/backgrounds/plan-dp-bg-1080.png');
+    background-image: image-set(url('../images/backgrounds/plan-dp-bg-1080.avif') type('image/avif'), url('../images/backgrounds/plan-dp-bg-1080.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 1440px) {
   .plans {
-    background-image: url('../images/backgrounds/plan-dp-bg-1600.png');
+    background-image: image-set(url('../images/backgrounds/plan-dp-bg-1600.avif') type('image/avif'), url('../images/backgrounds/plan-dp-bg-1600.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 1920px) {
   .plans {
-    background-image: url('../images/backgrounds/plan-dp-bg-2000.png');
+    background-image: image-set(url('../images/backgrounds/plan-dp-bg-2000.avif') type('image/avif'), url('../images/backgrounds/plan-dp-bg-2000.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 2560px) {
   .plans {
-    background-image: url('../images/backgrounds/plan-dp-bg-2600.png');
+    background-image: image-set(url('../images/backgrounds/plan-dp-bg-2600.avif') type('image/avif'), url('../images/backgrounds/plan-dp-bg-2600.png') type('image/png'));
   }
 }
 
@@ -976,7 +976,7 @@ p {
 .cta-content-wrapper {
   grid-column-gap: 2.77778vw;
   grid-row-gap: 2.77778vw;
-  background-image: url('../images/backgrounds/cta-bg-500.png'), linear-gradient(#020308, #020308);
+  background-image: image-set(url('../images/backgrounds/cta-bg-500.avif') type('image/avif'), url('../images/backgrounds/cta-bg-500.png') type('image/png')), linear-gradient(#020308, #020308);
   background-position: 0 0, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: auto 34.7222vw, auto;
@@ -993,25 +993,25 @@ p {
 
 @media screen and (min-width: 768px) {
   .cta-content-wrapper {
-    background-image: url('../images/backgrounds/cta-bg-800.png'), linear-gradient(#020308, #020308);
+    background-image: image-set(url('../images/backgrounds/cta-bg-800.avif') type('image/avif'), url('../images/backgrounds/cta-bg-800.png') type('image/png')), linear-gradient(#020308, #020308);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .cta-content-wrapper {
-    background-image: url('../images/backgrounds/cta-bg-1080.png'), linear-gradient(#020308, #020308);
+    background-image: image-set(url('../images/backgrounds/cta-bg-1080.avif') type('image/avif'), url('../images/backgrounds/cta-bg-1080.png') type('image/png')), linear-gradient(#020308, #020308);
   }
 }
 
 @media screen and (min-width: 1440px) {
   .cta-content-wrapper {
-    background-image: url('../images/backgrounds/cta-bg-1600.png'), linear-gradient(#020308, #020308);
+    background-image: image-set(url('../images/backgrounds/cta-bg-1600.avif') type('image/avif'), url('../images/backgrounds/cta-bg-1600.png') type('image/png')), linear-gradient(#020308, #020308);
   }
 }
 
 @media screen and (min-width: 1920px) {
   .cta-content-wrapper {
-    background-image: url('../images/backgrounds/cta-bg-2000.png'), linear-gradient(#020308, #020308);
+    background-image: image-set(url('../images/backgrounds/cta-bg-2000.avif') type('image/avif'), url('../images/backgrounds/cta-bg-2000.png') type('image/png')), linear-gradient(#020308, #020308);
   }
 }
 
@@ -1094,7 +1094,7 @@ p {
 }
 
 .footer {
-  background-image: url('../images/backgrounds/footer-bg-500.png');
+  background-image: image-set(url('../images/backgrounds/footer-bg-500.avif') type('image/avif'), url('../images/backgrounds/footer-bg-500.png') type('image/png'));
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 82.2917vw;
@@ -1105,25 +1105,25 @@ p {
 
 @media screen and (min-width: 768px) {
   .footer {
-    background-image: url('../images/backgrounds/footer-bg-800.png');
+    background-image: image-set(url('../images/backgrounds/footer-bg-800.avif') type('image/avif'), url('../images/backgrounds/footer-bg-800.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 1024px) {
   .footer {
-    background-image: url('../images/backgrounds/footer-bg-1080.png');
+    background-image: image-set(url('../images/backgrounds/footer-bg-1080.avif') type('image/avif'), url('../images/backgrounds/footer-bg-1080.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 1440px) {
   .footer {
-    background-image: url('../images/backgrounds/footer-bg-1600.png');
+    background-image: image-set(url('../images/backgrounds/footer-bg-1600.avif') type('image/avif'), url('../images/backgrounds/footer-bg-1600.png') type('image/png'));
   }
 }
 
 @media screen and (min-width: 1920px) {
   .footer {
-    background-image: url('../images/backgrounds/footer-bg-2000.png');
+    background-image: image-set(url('../images/backgrounds/footer-bg-2000.avif') type('image/avif'), url('../images/backgrounds/footer-bg-2000.png') type('image/png'));
   }
 }
 
@@ -1797,7 +1797,7 @@ p {
   }
 
   .cta-content-wrapper {
-    background-image: url('../images/backgrounds/cta-bg-500.png'), linear-gradient(#020308, #020308);
+    background-image: image-set(url('../images/backgrounds/cta-bg-500.avif') type('image/avif'), url('../images/backgrounds/cta-bg-500.png') type('image/png')), linear-gradient(#020308, #020308);
     background-size: cover, auto;
     border-radius: 3.22581vw;
     height: 67.2043vw;
