@@ -12,9 +12,7 @@ IMAGES = ROOT / "images"
 QUALITY = 58
 SPEED = 4
 
-SKIP_AVIF = {
-    IMAGES / "icons" / "webclip.png",
-}
+SKIP_AVIF: set[Path] = set()
 
 
 def convert_png_to_avif(png: Path) -> Path:

@@ -50,8 +50,9 @@ ICONS = [
     "mobile-bg-footer.svg",
     "poplar.svg",
     "tab-icon.svg",
-    "favicon.ico",
-    "webclip.png",
+    "favicon.svg",
+    "favicon-32.png",
+    "apple-touch-icon.png",
 ]
 
 LOGOS = [f"slide_{i}.png" for i in range(1, 7)]
